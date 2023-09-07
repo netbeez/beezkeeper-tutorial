@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Overview/agents.md",
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f5153f8dfe5a6cac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "overview.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overview/agents.md",
+                "file": "overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overview/agents.md",
+                "file": "overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overview/agents.md"
+                "file": "overview.md"
               }
             }
           },
@@ -154,14 +167,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4e58a06100bd330",
+  "active": "f5153f8dfe5a6cac",
   "lastOpenFiles": [
-    "assets/8.windows-agent-icon.png",
-    "Overview/agents.md",
     "Overview/dashboard.md",
-    "Overview/server.md",
-    "index.md",
     "Overview/index.md",
+    "index.md",
+    "overview.md",
+    "Overview/targets.md",
+    "assets/10.target-details.png",
+    "Overview/agents.md",
+    "assets/9.mac-agent-icon.png",
+    "assets/8.windows-agent-icon.png",
+    "Overview/server.md",
     "overview/server.md",
     "overview/agents.md",
     "Overview/2. Dashboard.md",

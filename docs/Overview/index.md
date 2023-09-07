@@ -4,4 +4,4 @@
 1. [Dashboard](dashboard.md)
 2. [Server (BeezKeeper)](server.md)
 3. [Agents](agents.md)
-4. 
+4. [Targets](targets.md)

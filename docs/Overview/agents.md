@@ -50,7 +50,7 @@ The Linux agent is installed via the apt-get command on distributions such as De
 The Docker agent is available via the [NetBeez Docker hub page](https://hub.docker.com/r/netbeez/nb-agent). A NetBeez Docker agent is installed on a server, on an end-user desktop, or networking hardware (e.g. Cisco Catalyst Series switches with AppHosting). When deployed on a Mac OS or Windows 10 Professional or Enterprise system, it monitors the network performance of remote workers.
 
 ![Docker Agent](../assets/7.docker-agent-icon.png)
-##### Remote Worker Agents
+#### Remote Worker Agents
 
 Remote Worker Agents are designed to support employees who are working from home. These agents support:
 
@@ -65,31 +65,13 @@ Remote Worker Agents are designed to support employees who are working from home
 
 The remote worker agents can be installed on Windows and Mac.
 
-Windows Agent
+##### Windows Agent
 
 The Windows Remote Worker agent is an executable program that runs on Windows Desktops and Laptops. Currently, both Windows 7 and 10 versions are supported. You can download the latest version of the executable (in MSI format) [here](https://github.com/netbeez/windows/releases/latest).
 
-![[(../asset8.windows-agent-icon.png)
+![Windows Agent Icon](../assets/8.windows-agent-icon.png)
 
-Mac OS Agent
+##### Mac OS Agent
 
-![mac_logo.png](https://lh6.googleusercontent.com/2TmFRf4DrQLGg14Ml88jsu4yvqlzldu9KiXs8BaMKwY0JAr9ovD_X6kmmAHZkryY1L42QOxMwPhgfTncSx71CpCxMRFDOxEhNXvOQ-IaHkCxXhIPHSR1MmKCLajUDhnYOB7qG2gza9mfKMoIJFed2LM)
+![Mac Agent Icon](../assets/9.mac-agent-icon.png)
 
-### Targets
-
-A target is a web application or TCP-based service that is monitored by one or more agents running real-time tests such as ping, DNS, HTTP, traceroute and path analysis. A target is defined by one or more resources, which are defined by IP address, Fully Qualified Domain Name (FQDN), or URL. Each resource has its own assigned tests and alert profiles. We’ll talk more about targets in the [Monitoring](https://docs.google.com/document/d/1GsIWkWI3mMj2xqG0Ce_1BNrb8t8RhePK_bokT24sjo4/edit#heading=h.f8ca4ozijm9s) section of this tutorial.
-
-  
-
-![](https://lh4.googleusercontent.com/obdX4zZWzimlqHJbxZWhQwv_4YnPZsEa3tCS0BGj_pFcm_5AgKA_-_mH9MOJ3pwyMI3s1F2Wo1m6ZahWgeJoCh4YoFs1c-DavjhBPaP7CzCAeKfhAxgL8a5kBflSgXnug2HwyDmsSDwA6FkQkik_YiA)
-
-### Scheduled tests
-
-NetBeez supports three categories of scheduled tests: Iperf, speed test, and VoIP. Different from a real-time test, which is defined by a testing interval, a scheduled test runs less frequently according to a schedule defined by the user.
-
-  
-
-![](https://lh4.googleusercontent.com/TMCbutMpRMNi0oXVbKuwCW49GcC3o9b8yB1yzxaaatYtnLpMS7mXn4Yf2KVkgcLksBywFXWBPFONjfJlqIrsVfLlNqATCazJiq_UVKqHZzS08Q1EY-_mVf15TVcxl1yC47g_rz3RpZ9zuf7iFlwY7h0)
-
-  
-We’ll talk more about scheduled tests in the [Monitoring](https://docs.google.com/document/d/1GsIWkWI3mMj2xqG0Ce_1BNrb8t8RhePK_bokT24sjo4/edit#heading=h.f8ca4ozijm9s) section of this tutorial.**
