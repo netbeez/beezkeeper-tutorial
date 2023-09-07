@@ -5,7 +5,7 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 
 1. [Overview](overview.md)
 	1. [Dashboard](overview.md#Dashboard)
-	2. [[overview.md#Server (BeezKeeper)|Server (BeezKeeper)]]
+	2. 
 	3. [Agents](overview.md#Agents)
 	4. [[overview.md#Targets|Targets]]
 	5. [Scheduled Tests](overview.md#scheduled-tests)

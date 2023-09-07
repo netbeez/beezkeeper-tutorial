@@ -110,5 +110,5 @@ A target is a web application or TCP-based service that is monitored by one or m
 
 NetBeez supports three categories of scheduled tests: Iperf, speed test, and VoIP. Different from a real-time test, which is defined by a testing interval, a scheduled test runs less frequently according to a schedule defined by the user.
 
-![[11.scheduled-test-schedule.png]]
+![[assets/11.scheduled-test-schedule.png
 We’ll talk more about scheduled tests in the [Monitoring](https://docs.google.com/document/d/1GsIWkWI3mMj2xqG0Ce_1BNrb8t8RhePK_bokT24sjo4/edit#heading=h.f8ca4ozijm9s) section of this tutorial.
