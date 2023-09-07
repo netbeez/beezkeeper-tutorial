@@ -3,6 +3,8 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 
 # Table of Contents
 
-[Overview](Overview/index.md)
-
+1. [Overview](Overview/index.md)
+	1. [Dashboard](overview/dashboard.md)
+	2. [Server (BeezKeeper)](overview/server.md)
+	3. [Agents](overview/agents.md)
 
