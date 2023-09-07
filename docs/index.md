@@ -11,7 +11,7 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 	4. [Targets](overview.md#targets)
 	5. [Scheduled Tests](overview.md#scheduled-tests)
 2. [Server Deployment](server-deployment.md)
-3. 
+3. [Network Monitoring](network-monitoring.md)
 
 
 
