@@ -50,4 +50,4 @@ Once the BeezKeeper and the Beez have been deployed, it’s time to point your b
 - Send remote worker endpoints to users
     
 
-![First-time Wizard](assets/Pasted%20image%2020230907153140.png)
+![First-time Wizard](assets/13.first-time-wizard.png)

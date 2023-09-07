@@ -11,6 +11,9 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 	4. [Targets](overview.md#targets)
 	5. [Scheduled Tests](overview.md#scheduled-tests)
 2. [Server Deployment](server-deployment.md)
+	1. [On-premises or cloud](server-deployment.md#on-premise-or-cloud)
+	2. [Firewall rules](server-deployment.md#firewall-rules)
+	3. [Dashboard activation](server-deployment.md#dashboard-activation)
 3. [Network Monitoring](network-monitoring.md)
 
 
