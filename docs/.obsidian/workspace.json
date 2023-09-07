@@ -13,7 +13,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "assets/Pasted image 20230907171800.png"
+                "file": "assets/29.voip-test-results.png"
               }
             }
           },
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/Pasted image 20230907171800.png",
+                "file": "assets/29.voip-test-results.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/Pasted image 20230907171800.png",
+                "file": "assets/29.voip-test-results.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/Pasted image 20230907171800.png"
+                "file": "assets/29.voip-test-results.png"
               }
             }
           },
@@ -164,6 +164,9 @@
   },
   "active": "d4e58a06100bd330",
   "lastOpenFiles": [
+    "assets/28.network-speed-results-3d.png",
+    "assets/27.network-speed-results.png",
+    "assets/26.iperf-test-results-3d.png",
     "assets/25.iperf-test-details.png",
     "assets/24.vpn-testing.png",
     "assets/23.gateway-testing.png",
@@ -172,9 +175,6 @@
     "assets/20.new-dns-template.png",
     "assets/19.target-template-details.png",
     "assets/18.path-analysis.png",
-    "assets/17.new-target-class-selection.png",
-    "assets/16.real-time-graph-2.png",
-    "assets/15.real-time-graph.png",
     "index.md",
     "network-monitoring.md",
     "overview.md",

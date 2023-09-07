@@ -171,7 +171,7 @@ Another important option is the reverse flag. With this option, the throughput t
 #### Enhanced Scheduled Test Result Visualization For Iperf Tests
 An enhanced user interface has been added to multiple agents to server Iperf test results. Agents can be filtered by name, agent groups, agent type, ISP, ASN, bandwidth, jitter (UDP Only), and packet loss (UDP Only). Clicking on an agent in the table will display the agent's historical data in the next section. 
 
-![Iperf results - 3D metrics](assets/Pasted%20image%2020230907171800.png)
+![Iperf results - 3D metrics](assets/26.iperf-test-results-3d.png)
 
 In the section 'Draw Graph Based On': if bandwidth, jitter, and packet loss are selected, there will be a checkbox with the option to transform the graph into 3d. Viewing 3d Iperf test results is only available for UDP Iperf tests.
 
@@ -179,7 +179,7 @@ You can review setting Iperf tests on [this documentation page](https://netbeez.
 ### Network speed
 Network speed tests are useful to measure and build a baseline of download and upload speed. This data can be used to enforce Service Level Agreements (SLAs) with Internet Service Providers (ISPs) or troubleshoot performance issues at remote sites. 
 
-![Network speed test results](assets/Pasted%20image%2020230907171849.png)
+![Network speed test results](assets/27.network-speed-results.png)
 
 NetBeez agents can run three different implementations of network speed tests:
 
@@ -200,13 +200,13 @@ If you want to learn more about this command, read the [blog post on NDT](https:
 #### Enhanced Scheduled Test Result Visualization For Network Speed Tests
 Network Speed test results optimizes the user interface when viewing scheduled test results for hundreds or thousands of agents making it easy to filter and search for specific agent results. All network speed test results utilize this enhanced feature.
 
-![Network Speed Results - 3D metrics](assets/Pasted%20image%2020230907171933.png)
+![Network Speed Results - 3D metrics](assets/28.network-speed-results-3d.png)
 ### VoIP
 VoIP tests are used to assess the quality of the network to deliver real-time, voice calls. VoIP calls require a low latency network, with zero or minimal packet loss and jitter (variation of latency). 
 
 The test simulates a VoIP call between two agents and returns the Mean Opinion Score ([MOS](https://netbeez.net/blog/impact-of-packet-loss-jitter-and-latency-on-voip/)), which is a key performance indicator of call quality. The test also reports the jitter, packet loss, and latency values, which are factors that affect the call quality and, consequently the MOS calculation. If you want to learn more about this, read our [blog post on MOS](https://netbeez.net/blog/what-you-should-know-about-voice-over-ip/).
 
-![VoIP test results](assets/Pasted%20image%2020230907172004.png)
+![VoIP test results](assets/29.voip-test-results.png)
 
 When creating a new VoIP test, the user can pick the codec that is used to run the test. Please refer to the table below for a list of codecs and their characteristics. All the VoIP tests generate a UDP stream between the two agents selected that conform to the codec’s specifications. A common characteristic of these different codecs is that they’re delivered as UDP packets marked with the EF (DSCP 46) IP Type of Service.
 
