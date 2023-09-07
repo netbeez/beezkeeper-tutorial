@@ -210,15 +210,15 @@ The test simulates a VoIP call between two agents and returns the Mean Opinion S
 
 When creating a new VoIP test, the user can pick the codec that is used to run the test. Please refer to the table below for a list of codecs and their characteristics. All the VoIP tests generate a UDP stream between the two agents selected that conform to the codec’s specifications. A common characteristic of these different codecs is that they’re delivered as UDP packets marked with the EF (DSCP 46) IP Type of Service.
 
-|Codec Name|Payload Size|Voice Speech|Pkts per Sec.|Bit Rate|
-|---|---|---|---|---|
-|G.711|160 Bytes|20 ms|50|64 Kbps|
-|G.729|20 Bytes|20 ms|50|8 Kbps|
-|G.723.1-63|24 Bytes|30 ms|33.3|21.9 Kbps|
-|G.723.1-53|20 Bytes|30 ms|33.3|20.8 Kbps|
-|G.726|80 Bytes|20 ms|50|55.2 Kbps|
-|G.728|60 Bytes|30 ms|33.3|31.5 Kbps|
-|G.722|160 Bytes|20 ms|50|38.4 Kbps|
+| Codec Name | Payload Size | Voice Speech | Pkts per Sec. | Bit Rate |
+| --- | --- | --- | --- | --- |
+| G.711 | 160 Bytes | 20 ms | 50 | 64 Kbps |
+| G.729 | 20 Bytes | 20 ms | 50 | 8 Kbps |
+| G.723.1-63 | 24 Bytes | 30 ms | 33.3 | 21.9 Kbps |
+| G.723.1-53 | 20 Bytes | 30 ms | 33.3 | 20.8 Kbps |
+| G.726 | 80 Bytes | 20 ms | 50 | 55.2 Kbps |
+| G.728 | 60 Bytes | 30 ms | 33.3 | 31.5 Kbps |
+| G.722 | 160 Bytes | 20 ms | 50 | 38.4 Kbps |
 ## QoS
 
 NetBeez has included DSCP marking of IP packets in the following tests: ping, traceroute, Iperf, and VoIP (pre-set). DSCP marking can be used to test differences in test performance based on the QoS policy applied to network devices.
