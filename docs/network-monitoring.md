@@ -8,14 +8,13 @@ When an agent connects to the NetBeez dashboard it reports its external IP addre
 - Autonomous System Number (ASN), which is a specific network number that belongs to that specific ISP.
     
 With ISP tagging NetBeez users can filter agents based on these two tags, and reduce troubleshooting time to identify ISP issues affecting a set of remote users.
-![](https://lh6.googleusercontent.com/zjMiuXu4RVSIuwHxCHoz9tlWTuxi6Z5veVCBMB9h5YWjym4EH6nn_e-eBXQ5Rn7AgIN7IGxHI9AvBHujnNxiZ1CyDp3Qbb7VntijncP8zE0nInI0_8tD3T-qqwieonLCx632I8bPNHCaqzqS5FdbL44)
 
+![Agent List](assets/Pasted%20image%2020230907170921.png)
 Read more about ISP Tagging in our [documentation](https://netbeez.zendesk.com/hc/en-us/articles/4413138630797).
 ## Endpoint Performance Metrics
 Device performance metrics are available on remote endpoints and network agents. On the agent details, you are able to view CPU, RAM, and HDD space. CPU and RAM data can be viewed on Ping, DNS, and HTTP tests' real-time and historical graphs. With this information, it will be easier to troubleshoot remote end-user experience issues caused by endpoint performance degradation.
 
-![](https://lh6.googleusercontent.com/BYhfdV3e-PwvwqFwQfCKp-tMS62Dbm9w-aQ22Vfbur_Iky-JN0s3p9EppXazIQNDiKbLDdvwW4fxS5H7c4WhBjNa9ECbqXAWhGVLrdmjTGdxJ1bdAezI1h2qQJyR7eSjlpVGD_ImAFCap8pXZ8bPCqE)
-
+![Real-time graph](assets/Pasted%20image%2020230907171120.png)
 Read more about endpoint metrics in our [documentation](https://netbeez.zendesk.com/hc/en-us/articles/4413138229005).
 ## Targets and real-time testing
 To monitor an application you need to create a target using its FQDN, IP, or web address and select the tests that will be included. The tests are selected based on the type of application, or service, that is monitored. The minimum test interval can be set to one second to reduce the time to detect problems as well as to have enough granular data to understand the behavior of the network and applications (except for Path Analysis where the minimum interval is 60 seconds).  
@@ -38,7 +37,7 @@ While on the historical view, ping, DNS, and HTTP can be exported to a CSV file 
 
 Path analysis results are found on the Path Analysis tab on the agent details page.
 
-![](https://lh4.googleusercontent.com/fZy_IJ3C0ZqLDF5YW1E6NA_r4jQM9ACcJsKvIeP-JMzeWTP-Ju1q-tnlRpEbRoZ8zlKfC5YtRFB0xX-ZMJUDEPQQFn-2kOwkIHQfmnBrHZCUmZ1CLAcfcwo4ai12Iyl7bhgk8pfeKw1hiZM1CXAY1I0)
+![Real-time graph with Jitter & MOS](assets/Pasted%20image%2020230907171207.png)
 
 The below table reports the default timing intervals associated with tests included in a target. Test intervals can be adjusted anytime by the user.
 
@@ -62,7 +61,7 @@ Targets can be created from predefined SaaS targets, target templates, and fully
     
 - Custom Targets: Ping, DNS, HTTP, Traceroute, and Path Analysis.
     
-![](https://lh3.googleusercontent.com/IDg9kreE-jbmZSUojwlWHYXFBRNhwzSBYaogKWwiahIEn3RXL_Hl6tvK6yLcxti7966alPgU0rg71ORzMNmmpPAs-7hGeoJdYywF0YrkzYPKKyZp4LAWHIKTwTBX7eXPxYFQfYGAFKhYk4IT-DcdFGw) 
+![Choosing a New Target class](assets/Pasted%20image%2020230907171253.png)
 
 Before creating a target, it’s a good practice to verify on the ad-hoc tab that the tests are correctly configured. Common configuration mistakes include:
 
@@ -75,7 +74,7 @@ Before creating a target, it’s a good practice to verify on the ad-hoc tab tha
 ### Path Analysis
 The Path Analysis feature augments the existing traceroute capability for more accurate, real-time visibility on equal-cost multi-path network topologies, such as the Internet.
 
-![](https://lh3.googleusercontent.com/jbV6yde_lGj6CWMeNwDcgfzh3I0YYYNyFIPCZzaqwOSCmOqlFLEIgPijYTyLOaB221_a981VxMY-VvjFLCi9AAnOIvhOaC0c-YqFKmMTixOGEveubpx-eiZM-qXE1zZA-8s5N-BWfZ0i99QuV59ujyE)
+![Path Analysis](assets/Pasted%20image%2020230907171332.png)
 
 For each hop, path analysis provides extensive information that is valuable for network analysis and troubleshooting, such as:
 
@@ -103,22 +102,22 @@ To monitor a web service include the following tests:
     
 By comparing the status and performance of these three tests from multiple agents, NetBeez can determine whether a problem is related to the network, the webserver, or the DNS. In the [anomaly detection](https://docs.google.com/document/d/1GsIWkWI3mMj2xqG0Ce_1BNrb8t8RhePK_bokT24sjo4/edit#heading=h.n6ogakcoekwr) section of this manual, we’ll cover in detail alerts, incidents, and notifications.
 
-![](https://lh3.googleusercontent.com/QABONq-Sc6tQm-E28bodUw8P-axyvKRwgVbvgiII7Jc8_GWQJujMFYr2W8DZOevxTSeoD0yA7rnXf-9ZXHIfXgTPArU83gN3kymM_L2ChxGUI0sTyoCLix_R3MjemZZ5FYiljgJQRQSCpm-sB64ldG4)
+![Test template details](assets/Pasted%20image%2020230907171403.png)
 
 ### Monitoring a DNS service
 When monitoring a DNS server we want to make sure that those DNS servers are reachable by the end-users and that the DNS service on the servers is correctly working (responding to DNS requests). For this reason, we’ll create the following resources:
 
 - One resource for each DNS server to be monitored; set the DNS server’s IP address as destination, and include ping and traceroute or path analysis tests.
     
-![](https://lh6.googleusercontent.com/CP_WWMSiK6O9hPb8CLF5xlg18WKKWYdYfT3izEk2EmkmmMoIQZIB136B1SGDCommm1T9RmZVAkGHYwBCNI8z0TGytfYEj0wxN71Z6aeDSKRirqZy193aJkiA_yOU411EDo48ngTv1AmBI9SQSIjmqpg)
+![New DNS template](assets/Pasted%20image%2020230907171432.png)
 
 - One resource (or more if needed) to verify that the DNS resolution process is working; set as destination one FQDN, then create a DNS test for each one of the DNS servers to be monitored. In the DNS test settings, specify the IP address of the DNS server
     
-![](https://lh4.googleusercontent.com/sj0dWHiXwrw_2KolkZzQBWxCGKIw6TO80ZoDvDBlRD8So3DhHvHCej_AH8lT3id1EFIMunetY4hrXgMyynxPrJD4ukm0VKOxfSE4GbE-LQcDRCkjaNhJaroIZRTi0q8fwpCg5Fl6qgaqLTRkTBUYdLQ)
+![Edit DNS template](assets/Pasted%20image%2020230907171459.png)
 ### Monitoring a TCP-based application
 Other applications can be monitored using a TCP-based ping test, which verifies that a specific TCP/IP port is open and how long it takes to establish a connection. This test, complemented with ICMP-based ping provides good data to verify the status and health of a generic TCP-based application.
 
-![](https://lh5.googleusercontent.com/4cz1M8HE6DnMKCToZgL8mm1_JB4RkyaQSxn_lMryjfhlasnExt6ZaW5xFwcOyr_ZApUJRnD80NYGtd1pDYC7uYxm_kiNM3OyKJSONB1KcL3hAGdD1vhy2PAJFfflmvA1adIyRc-VN_GHzpolDq2woKA)
+![TCP testing](assets/Pasted%20image%2020230907171557.png)
 ### WAN performance monitoring
 To monitor the performance of a Wide Area Network, users can set up a hub-and-spoke or a full-mesh target. A hub-and-spoke target is used to verify connectivity and performance from remote sites to one or more WAN routers (aggregation points). A full-mesh target is used to verify connectivity and performance from each remote site to another remote site. The former is easier to set up and requires fewer tests than the latter. The latter is more complete because it takes into account the source and the destination. Users should consider the pros and cons of each solution before picking one.
 
@@ -130,7 +129,7 @@ Gateway testing gives the ability to define a generic ‘_gateway_’ target tha
 
 Only ping tests can be added to targets using gateway testing; DNS, HTTP, Traceroute, and Path Analysis are disabled.
 
-![](https://lh4.googleusercontent.com/YZd3_HZAgLN-zg0koY-hmBp5N-SYAnz4WAzj4Ktb825L2E-FF8bZxE2IJ4Suh5-WwOE1vtFtSZALV1bMk1I3YLEPb20X9266uBCxa3wWCqAcoNrPJstnIZ1sXSjsAJ-itfkw67nCwd3UlJB1agLEo7A)
+![Gateway testing](assets/Pasted%20image%2020230907171622.png)
 
 You can review setting up gateway testing on [this documentation page](https://netbeez.zendesk.com/hc/en-us/articles/6193893295757).
 ### Tests Over VPN
@@ -138,7 +137,7 @@ Targets can be configured to run tests only when the VPN interface on assigned a
 
 For agents that do not have a VPN interface and are assigned to a target running tests on VPN, no tests will be run until the endpoint detects a VPN interface. Currently, only remote worker agents support testing over VPN.
 
-![](https://lh5.googleusercontent.com/BH-g9UHPB3x3oLOamYylLL4H3FgNA0TC-e1068CZM2LANI98kG0eOOp_u-BLsdUmgXLeCqtbHO89Fn3JCvZH2IXNidMqdXiXTIe08VfhXCyeDgVerNb5oCH9aawM3_ZeeVDvrmey0Le3VNMKHZKKxW0)
+![VPN interface tests](assets/Pasted%20image%2020230907171643.png)
 
 You can review setting up tests over VPN on [this documentation page](https://netbeez.zendesk.com/hc/en-us/articles/5383378574349). 
 ## Monitoring network performance with scheduled tests
@@ -146,7 +145,7 @@ NetBeez supports three types of scheduled tests: Iperf, network speed, and VoIP.
 ### Iperf
 NetBeez has implemented an automated way to run Iperf throughput tests without needing an operator to do so. For those unfamiliar with iperf, it’s an open-source utility that executes TCP, UDP, and multicast throughput tests between one or more end-points. An Iperf test returns the one-way throughput between the client(s) and the server. In the case of UDP tests, Iperf also reports packet loss and jitter. Iperf can be also configured to run multiple parallel tests, stress testing the network.
 
-![](https://lh5.googleusercontent.com/2b2eY1lPhqLj8tjtdnLg0F_90gxDba5QSXFVox6UaamsUCBdfZAlNtm1LyBVnpFylWxCEcdotKesT9due7AwABuO0ZPBYXwgt97LlAdYEX3R0f0FaK6jnquhUkMKE4cyEKMe7sH--aAg8CmUDV_2Ukk)
+![UDP Iperf test](assets/Pasted%20image%2020230907171722.png)
 
 NetBeez supports two patterns: from one agent to another one, or from one or more agents to an Iperf server, which is not managed by the NetBeez dashboard itself. This case is useful to stress test a hub-and-spoke topology.
 
@@ -154,7 +153,7 @@ Another important option is the reverse flag. With this option, the throughput t
 #### Enhanced Scheduled Test Result Visualization For Iperf Tests
 An enhanced user interface has been added to multiple agents to server Iperf test results. Agents can be filtered by name, agent groups, agent type, ISP, ASN, bandwidth, jitter (UDP Only), and packet loss (UDP Only). Clicking on an agent in the table will display the agent's historical data in the next section. 
 
-![](https://lh4.googleusercontent.com/GfoFVF-Sj9zWQVLPf4gWxRXQzlkYaSNHZ8fqI1QMK7IkZAJntao5bbQYXss36ErhN9uHwIPjPuM-iCv_CXK7NdNcE4wjP6Tkjv3oYkJBr1dqFiFdXRPC2bN6XUwf1kRjumKoXnvxyMA1HO7-lV0O1qs)
+![Iperf results - 3D metrics](assets/Pasted%20image%2020230907171800.png)
 
 In the section 'Draw Graph Based On': if bandwidth, jitter, and packet loss are selected, there will be a checkbox with the option to transform the graph into 3d. Viewing 3d Iperf test results is only available for UDP Iperf tests.
 
@@ -162,7 +161,7 @@ You can review setting Iperf tests on [this documentation page](https://netbeez.
 ### Network speed
 Network speed tests are useful to measure and build a baseline of download and upload speed. This data can be used to enforce Service Level Agreements (SLAs) with Internet Service Providers (ISPs) or troubleshoot performance issues at remote sites. 
 
-![](https://lh5.googleusercontent.com/8Y051RNAlFMfqCPbDAT1-shoSLgGULMLfSLTQDy6ziegY72KfHMJDlVCmPU8sQKTSZb4MoZiYP2n55sBbOUo1bgEN3Ig5Ydf_wNbHr-0l0IDJNnWeRFSAb9_q2rhabRvd_18DjjV8HImf_51Q-yNWYY)
+![Network speed test results](assets/Pasted%20image%2020230907171849.png)
 
 NetBeez agents can run three different implementations of network speed tests:
 
