@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "37cda0787d48c976",
+        "id": "8141e49b2535dbb0",
         "type": "tabs",
         "children": [
           {
-            "id": "8a51424a03736e32",
+            "id": "d4e58a06100bd330",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -154,10 +154,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a51424a03736e32",
+  "active": "d4e58a06100bd330",
   "lastOpenFiles": [
-    "Overview/dashboard.md",
+    "assets/8.windows-agent-icon.png",
     "Overview/agents.md",
+    "Overview/dashboard.md",
     "Overview/server.md",
     "index.md",
     "Overview/index.md",

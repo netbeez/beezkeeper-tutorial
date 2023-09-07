@@ -11,6 +11,7 @@ The connection is initiated by the agents, simplifying the deployment of agents 
 - IPv4 address: This is the address associated with the Ethernet or WiFi interface.
 - IPv4 external: This is the public IPv4 address, available if the agent is behind NAT.
 - IPv6 address: This is the IPv6 address associated with the Ethernet interface.
+
 ![Control Interface](../assets/3.control-interface.png)
 ### Agent Categories
 
@@ -32,18 +33,22 @@ The wired agent simulates an Ethernet client and can run throughput tests up to 
 The wireless agent simulates a WiFi client with an 802.11ac interface and can run throughput tests up to 150 Mbps. The control channel is established via an Ethernet connection. If available, otherwise via the WiFi interface.
 
 ![Hardware Agent](../assets/4.hardware-agent.png)
+
 *A NetBeez WiFi sensor.*
 
 #### Network Agents - Software-based
 Software agents can be deployed as a virtual appliance, a Docker container, a Linux package for Debian and Ubuntu systems, or a cloud image for AWS (for Azure and other cloud providers, we recommend using the Linux package).
 ##### Virtual agent
 A virtual agent is deployed at data centers or on any equipment that supports virtualization. NetBeez supports VMware, Microsoft HyperV, KVM, and vBox hypervisors. A virtual agent at the datacenter is used, for example, to measure connectivity and throughput from remote WAN locations. Virtual agents are also deployed at remote sites, hosted on networking hardware for example. 
+
 ![Virtual Agent Icon](../assets/5.virtual-agent-icon.png)
 ##### Linux agent
 The Linux agent is installed via the apt-get command on distributions such as Debian, Ubuntu, and Raspbyan. The Linux agent is convenient to enable NetBeez network monitoring on an existing Linux host, such as a server, workstation, or single-board computers such as Raspberry Pi and Odroid.
+
 ![Linux Agent](../assets/6.linux-agent-icon.png)
 ##### Docker Agent
 The Docker agent is available via the [NetBeez Docker hub page](https://hub.docker.com/r/netbeez/nb-agent). A NetBeez Docker agent is installed on a server, on an end-user desktop, or networking hardware (e.g. Cisco Catalyst Series switches with AppHosting). When deployed on a Mac OS or Windows 10 Professional or Enterprise system, it monitors the network performance of remote workers.
+
 ![Docker Agent](../assets/7.docker-agent-icon.png)
 ##### Remote Worker Agents
 
@@ -64,7 +69,7 @@ Windows Agent
 
 The Windows Remote Worker agent is an executable program that runs on Windows Desktops and Laptops. Currently, both Windows 7 and 10 versions are supported. You can download the latest version of the executable (in MSI format) [here](https://github.com/netbeez/windows/releases/latest).
 
-![windows_logo.png](https://lh5.googleusercontent.com/FGCRICpsLYVDqAOSMHw6hRUHpz99-Wyoh-MApDYsRwUVBzGljMzMMlwQt_CoZ9Yr0xc0mBxtJxyTUmNzVYWeP5Af13ebbakMs2uDoK9_viwjpuqAzwwFnPL7gce3AgGWpXo3t9T_KLyDClMrwoV5IbU)
+![[(../asset8.windows-agent-icon.png)
 
 Mac OS Agent
 
