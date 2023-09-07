@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4715cd57fe5f8ba1",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "3294c7d9306f46ae",
             "type": "leaf",
             "state": {
@@ -57,12 +49,12 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "assets/Pasted image 20230907120949.png"
+                "file": "assets/7.docker-agent-icon.png"
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -128,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/Pasted image 20230907120949.png",
+                "file": "assets/7.docker-agent-icon.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/Pasted image 20230907120949.png",
+                "file": "assets/7.docker-agent-icon.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/Pasted image 20230907120949.png"
+                "file": "assets/7.docker-agent-icon.png"
               }
             }
           },
@@ -197,15 +189,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c80de9308568efcd",
+  "active": "c7f344c3967a0b54",
   "lastOpenFiles": [
-    "assets/1.dashboard-buzztab.png",
-    "assets/agent-types.png",
-    "assets/Pasted image 20230907120949.png",
-    "assets/control-interface.png",
+    "assets/6.linux-agent-icon.png",
+    "assets/7.docker-agent-icon.png",
     "Overview/4. Agents.md",
     "Overview/3. Server (BeezKeeper).md",
     "Overview/2. Dashboard.md",
+    "assets/4.hardware-agent.png",
+    "assets/5.virtual-agent-icon.png",
+    "assets/3.control-interface.png",
+    "assets/2.agent-types.png",
+    "assets/1.dashboard-buzztab.png",
     "Overview/1. Overview.md",
     "Overview",
     "assets"
