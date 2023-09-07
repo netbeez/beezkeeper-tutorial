@@ -3,5 +3,6 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 
 # Table of Contents
 
-[Overview](obsidian://open?vault=docs&file=Overview%2F1.%20Overview)
+[Overview](Overview/index.md)
+
 
