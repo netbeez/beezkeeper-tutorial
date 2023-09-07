@@ -4,13 +4,20 @@
 - [Dashboard](#dashboard)
 - [Server (BeezKeeper)](#server-beezkeeper)
 - [Agents](#agents)
-	- [[#Agents#Control channel|Control channel]]
-	- [[#Agents#Agent Categories|Agent Categories]]
-		- [[#Agent Categories#Network Agents - Physical appliances|Network Agents - Physical appliances]]
-		- [[#Agent Categories#Network Agents - Software-based|Network Agents - Software-based]]
-		- [[#Agent Categories#Remote Worker Agents|Remote Worker Agents]]
-- [[#Targets|Targets]]
-- [[#Scheduled tests|Scheduled tests]]
+	- [Control channel](#control-channel)
+	- [Agent Categories](#agent-categories)
+		- [Network Agents - Physical appliances](#network-agents---physical-appliances)
+			- [Wired (GigE) - 10/100/1000Mbps](#wired-gige---101001000mbps)
+			- [Wireless (WiFi) - 802.11ac](#wireless-wifi---80211ac)
+		- [Network Agents - Software-based](#network-agents---software-based)
+			- [Virtual agent](#virtual-agent)
+			- [Linux agent](#linux-agent)
+			- [Docker Agent](#docker-agent)
+		- [Remote Worker Agents](#remote-worker-agents)
+			- [Windows Agent](#windows-agent)
+			- [Mac OS Agent](#mac-os-agent)
+- [Targets](#targets)
+- [Scheduled tests](#scheduled-tests)
 
 ## Dashboard
 The dashboard is the graphical user interface that is necessary to manage the agents, create monitoring tests, troubleshoot network or application problems, and receive alerts and reports.  The Dashboard runs on a dedicated server, called BeezKeeper. 
