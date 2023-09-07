@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8a51424a03736e32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overview/4. Agents.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overview/4. Agents.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overview/4. Agents.md"
+                "file": "index.md"
               }
             }
           },
@@ -191,19 +203,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c80de9308568efcd",
+  "active": "8a51424a03736e32",
   "lastOpenFiles": [
-    "assets/7.docker-agent-icon.png",
-    "assets/6.linux-agent-icon.png",
     "Overview/4. Agents.md",
+    "index.md",
     "Overview/3. Server (BeezKeeper).md",
     "Overview/2. Dashboard.md",
+    "Overview/1. Overview.md",
+    "assets/7.docker-agent-icon.png",
+    "assets/6.linux-agent-icon.png",
     "assets/4.hardware-agent.png",
     "assets/5.virtual-agent-icon.png",
     "assets/3.control-interface.png",
     "assets/2.agent-types.png",
     "assets/1.dashboard-buzztab.png",
-    "Overview/1. Overview.md",
     "Overview",
     "assets"
   ]
