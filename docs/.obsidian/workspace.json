@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "network-monitoring.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "network-monitoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "network-monitoring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "network-monitoring.md"
               }
             }
           },
@@ -167,8 +167,9 @@
   },
   "active": "d4e58a06100bd330",
   "lastOpenFiles": [
-    "server-deployment.md",
     "index.md",
+    "network-monitoring.md",
+    "server-deployment.md",
     "overview.md",
     "assets/Pasted image 20230907153140.png",
     "assets/12.deployment-options.png",
