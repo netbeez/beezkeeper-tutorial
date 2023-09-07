@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "overview.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,16 +23,13 @@
             "id": "f5153f8dfe5a6cac",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "overview.md",
-                "mode": "source",
-                "source": false
+                "file": "assets/11.scheduled-test-schedule.png"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,18 +164,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f5153f8dfe5a6cac",
+  "active": "d4e58a06100bd330",
   "lastOpenFiles": [
-    "Overview/dashboard.md",
-    "Overview/index.md",
     "index.md",
+    "assets/11.scheduled-test-schedule.png",
     "overview.md",
     "Overview/targets.md",
-    "assets/10.target-details.png",
     "Overview/agents.md",
+    "Overview/index.md",
+    "Overview/server.md",
+    "Overview/dashboard.md",
+    "assets/10.target-details.png",
     "assets/9.mac-agent-icon.png",
     "assets/8.windows-agent-icon.png",
-    "Overview/server.md",
     "overview/server.md",
     "overview/agents.md",
     "Overview/2. Dashboard.md",
@@ -194,7 +192,6 @@
     "assets/5.virtual-agent-icon.png",
     "assets/3.control-interface.png",
     "assets/2.agent-types.png",
-    "assets/1.dashboard-buzztab.png",
     "Overview",
     "assets"
   ]
