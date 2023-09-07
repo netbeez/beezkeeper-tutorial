@@ -4,10 +4,10 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 # Table of Contents
 
 1. [Overview](overview.md)
-	1. [Dashboard](overview.md#Dashboard)
-	2. 
-	3. [Agents](overview.md#Agents)
-	4. [[overview.md#Targets|Targets]]
+	1. [Dashboard](overview.md#dashboard)
+	2. [Server (BeezKeeper)](overview.md#server-beezkeeper)
+	3. [Agents](overview.md#agents)
+	4. [Targets](overview.md#targets)
 	5. [Scheduled Tests](overview.md#scheduled-tests)
 
 
