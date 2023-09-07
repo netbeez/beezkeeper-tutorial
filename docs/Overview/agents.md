@@ -1,6 +1,7 @@
+## Agents
 The agents (also called *Beez*) serve as the monitoring endpoints that run tests on the network and against the applications or targets. We have three types of agents: wired, wireless, and virtual/software. You can review the installation instructions on [this documentation page](https://netbeez.zendesk.com/hc/en-us/articles/204333545-Agent-Types). 
 
-![[2.agent-types.png]]
+![[../assets/2.agent-types.png]]
 #### Control channel
 
 The agents are centrally managed through the dashboard to which they send real-time results. This is established via a TCP connection from the agents to the dashboard. By default, the control channel is an encrypted SSL socket to TCP port 20018 on the server. 
@@ -10,7 +11,7 @@ The connection is initiated by the agents, simplifying the deployment of agents 
 - IPv4 address: This is the address associated with the Ethernet or WiFi interface.
 - IPv4 external: This is the public IPv4 address, available if the agent is behind NAT.
 - IPv6 address: This is the IPv6 address associated with the Ethernet interface.
-![[3.control-interface.png]]
+![[../assets/3.control-interface.png]]
 ### Agent Categories
 
 NetBeez Agents are divided into two categories, Network Agents and Remote Worker Agents.
@@ -30,23 +31,23 @@ The wired agent simulates an Ethernet client and can run throughput tests up to 
 
 The wireless agent simulates a WiFi client with an 802.11ac interface and can run throughput tests up to 150 Mbps. The control channel is established via an Ethernet connection. If available, otherwise via the WiFi interface.
 
-![[4.hardware-agent.png]]
+![[../assets/4.hardware-agent.png]]
 *A NetBeez WiFi sensor.*
 
 #### Network Agents - Software-based
 Software agents can be deployed as a virtual appliance, a Docker container, a Linux package for Debian and Ubuntu systems, or a cloud image for AWS (for Azure and other cloud providers, we recommend using the Linux package).
 ##### Virtual agent
 A virtual agent is deployed at data centers or on any equipment that supports virtualization. NetBeez supports VMware, Microsoft HyperV, KVM, and vBox hypervisors. A virtual agent at the datacenter is used, for example, to measure connectivity and throughput from remote WAN locations. Virtual agents are also deployed at remote sites, hosted on networking hardware for example. 
-![[5.virtual-agent-icon.png]]
+![[../assets/5.virtual-agent-icon.png]]
 
 ##### Linux agent
 The Linux agent is installed via the apt-get command on distributions such as Debian, Ubuntu, and Raspbyan. The Linux agent is convenient to enable NetBeez network monitoring on an existing Linux host, such as a server, workstation, or single-board computers such as Raspberry Pi and Odroid.
 
-![[6.linux-agent-icon.png]]
+![[../assets/6.linux-agent-icon.png]]
 
 ##### Docker Agent
 The Docker agent is available via the [NetBeez Docker hub page](https://hub.docker.com/r/netbeez/nb-agent). A NetBeez Docker agent is installed on a server, on an end-user desktop, or networking hardware (e.g. Cisco Catalyst Series switches with AppHosting). When deployed on a Mac OS or Windows 10 Professional or Enterprise system, it monitors the network performance of remote workers.
-![[7.docker-agent-icon.png]]
+![[../assets/7.docker-agent-icon.png]]
 ##### Remote Worker Agents
 
 Remote Worker Agents are designed to support employees who are working from home. These agents support:

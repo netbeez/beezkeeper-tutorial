@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Overview/index.md",
+                "file": "Overview/dashboard.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overview/index.md",
+                "file": "Overview/dashboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overview/index.md",
+                "file": "Overview/dashboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overview/index.md"
+                "file": "Overview/dashboard.md"
               }
             }
           },
@@ -156,12 +156,12 @@
   },
   "active": "8a51424a03736e32",
   "lastOpenFiles": [
-    "overview/server.md",
-    "Overview/index.md",
-    "overview/agents.md",
+    "Overview/agents.md",
     "Overview/server.md",
     "index.md",
-    "Overview/agents.md",
+    "Overview/index.md",
+    "overview/server.md",
+    "overview/agents.md",
     "Overview/2. Dashboard.md",
     "Overview/3. Server (BeezKeeper).md",
     "Overview/4. Agents.md",
