@@ -15,6 +15,11 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 	2. [Firewall rules](server-deployment.md#firewall-rules)
 	3. [Dashboard activation](server-deployment.md#dashboard-activation)
 3. [Network Monitoring](network-monitoring.md)
+	1. [ISP Tagging](network-monitoring.md#isp-tagging)
+	2. [Endpoint Performance Metrics](network-monitoring.md#endpoint-performance-metrics)
+	3. [Targets and real-time testing](network-monitoring.md#targets-and-real-time-testing)
+	4. [Monitoring network performance with scheduled tests](network-monitoring.md#monitoring-network-performance-with-scheduled-tests)
+	5. [QoS](network-monitoring.md#qos)
 
 
 
