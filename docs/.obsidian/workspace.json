@@ -47,9 +47,11 @@
             "id": "c80de9308568efcd",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/7.docker-agent-icon.png"
+                "file": "Overview/4. Agents.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -120,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/7.docker-agent-icon.png",
+                "file": "Overview/4. Agents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/7.docker-agent-icon.png",
+                "file": "Overview/4. Agents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/7.docker-agent-icon.png"
+                "file": "Overview/4. Agents.md"
               }
             }
           },
@@ -189,10 +191,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7f344c3967a0b54",
+  "active": "c80de9308568efcd",
   "lastOpenFiles": [
-    "assets/6.linux-agent-icon.png",
     "assets/7.docker-agent-icon.png",
+    "assets/6.linux-agent-icon.png",
     "Overview/4. Agents.md",
     "Overview/3. Server (BeezKeeper).md",
     "Overview/2. Dashboard.md",
