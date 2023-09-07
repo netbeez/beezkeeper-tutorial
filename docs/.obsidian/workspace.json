@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "39aab6a531b1c576",
+    "type": "split",
+    "children": [
+      {
+        "id": "37cda0787d48c976",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4715cd57fe5f8ba1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "3294c7d9306f46ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Overview/1. Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "69c6933a096370e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Overview/2. Dashboard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b0667d955eb0c743",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Overview/3. Server (BeezKeeper).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c80de9308568efcd",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/Pasted image 20230907120949.png"
+              }
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "18bb55f21e910722",
+    "type": "split",
+    "children": [
+      {
+        "id": "84691c2c6649a793",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c7f344c3967a0b54",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c82420fd93ec5e5d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "55a4ed2728843794",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "df541326cd2b924b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b54cd0023028c286",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34f9f61f23499161",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "assets/Pasted image 20230907120949.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "92ed52407950d7aa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "assets/Pasted image 20230907120949.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed6304ad2d88f178",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "17fc28955249349b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "assets/Pasted image 20230907120949.png"
+              }
+            }
+          },
+          {
+            "id": "8b05a423f0d217cf",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c80de9308568efcd",
+  "lastOpenFiles": [
+    "assets/1.dashboard-buzztab.png",
+    "assets/agent-types.png",
+    "assets/Pasted image 20230907120949.png",
+    "assets/control-interface.png",
+    "Overview/4. Agents.md",
+    "Overview/3. Server (BeezKeeper).md",
+    "Overview/2. Dashboard.md",
+    "Overview/1. Overview.md",
+    "Overview",
+    "assets"
+  ]
+}
