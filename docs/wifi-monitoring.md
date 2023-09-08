@@ -52,7 +52,6 @@ A WiFi network agent reports the following WiFi metrics about the monitored netw
 
 |Metric to be plotted|Data Type|
 |---|---|
-
 |TX/RX data on WLAN interface|Bps (number)|
 |SSID|string up to 32 chars|
 |BSSID|HEX string similar to MAC address (FF:FF:FF:FF:FF:FF)|
