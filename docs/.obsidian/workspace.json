@@ -169,6 +169,7 @@
   "lastOpenFiles": [
     "overview.md",
     "network-monitoring.md",
+    "index.md",
     "assets/29.voip-test-results.png",
     "assets/28.network-speed-results-3d.png",
     "assets/27.network-speed-results.png",
@@ -179,7 +180,6 @@
     "assets/22.tcp-testing.png",
     "assets/21.edit-dns-template.png",
     "assets/20.new-dns-template.png",
-    "index.md",
     "server-deployment.md",
     "Overview/targets.md",
     "Overview/agents.md",
