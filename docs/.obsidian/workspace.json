@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "wifi-monitoring.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "wifi-monitoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "wifi-monitoring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "wifi-monitoring.md"
               }
             }
           },
@@ -167,9 +167,10 @@
   },
   "active": "d4e58a06100bd330",
   "lastOpenFiles": [
+    "index.md",
+    "wifi-monitoring.md",
     "overview.md",
     "network-monitoring.md",
-    "index.md",
     "assets/29.voip-test-results.png",
     "assets/28.network-speed-results-3d.png",
     "assets/27.network-speed-results.png",
