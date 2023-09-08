@@ -21,5 +21,7 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 	4. [Monitoring network performance with scheduled tests](network-monitoring.md#monitoring-network-performance-with-scheduled-tests)
 	5. [QoS](network-monitoring.md#qos)
 4. [WiFi Monitoring](wifi-monitoring.md)
+5. [Anomaly Detection](anomaly-detection.md)
+6. 
 
 
