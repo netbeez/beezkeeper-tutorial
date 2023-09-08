@@ -52,6 +52,7 @@ A WiFi network agent reports the following WiFi metrics about the monitored netw
 
 |Metric to be plotted|Data Type|
 |---|---|
+
 |TX/RX data on WLAN interface|Bps (number)|
 |SSID|string up to 32 chars|
 |BSSID|HEX string similar to MAC address (FF:FF:FF:FF:FF:FF)|
@@ -152,16 +153,10 @@ Via the NetBeez dashboard the user can also perform an SSID scan to verify if an
 
 WiFi sensors have the ability to run real-time tests on the ethernet interface. Wired tests on WiFi are enabled on a per-target basis. If enabled on a target with WiFi sensors assigned to it, those sensors will run that target's tests on the WiFi as well as the wired interface simultaneously. This feature is only available on the Network WiFi agents.
 
-  
-
 ![](https://lh3.googleusercontent.com/_mSeatPRcLGcgPAJdRCUa5DLYRHreWevN4INWSYJQgNhkwkCKfjg_chLIioGvr4S9-2Aeio177zfqia6srI9kkDkL8RqFvzbGahbZlWrv2bwjoMeQmkVENijHGOqPsrr-kphf7FvK0kIVN-6Q1s6QGY)
 
 ### Packet Capture
 
 Packet capture is available for WiFi sensors in the ad-hoc tab of the NetBeez dashboard. During this operation, the NetBeez sensor pauses real-time and scheduled tests for the duration of the packet capture process. At the end of the packet capture, you can download the captured frames in a pcap file for further analysis (using tools like Wireshark), while the sensor resumes its regular network monitoring operations.
 
-  
-
 ![](https://lh6.googleusercontent.com/JWWuPrDiDpA-S3og0N40kBgz9CdNkAJkNO2GsU1awqHE-RE59HXb_mo7DKkppOzctZGC3B-vI7rwQpsk82PhXzXl9U5X3OE4wwsruqOeHM4l1dquqJWRpBqc69dA4_K4w8or1DTNtQ24kQC8lbFdo7I)
-
-**
