@@ -34,6 +34,16 @@
             }
           },
           {
+            "id": "8cfb4534cdf0f273",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
+          },
+          {
             "id": "64d5feac3ed1eb36",
             "type": "leaf",
             "state": {
@@ -57,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -174,6 +184,16 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "3dc2d92aee293326",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
         "currentTab": 4
@@ -192,7 +212,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3c1cdbd5f1d4f93c",
+  "active": "8cfb4534cdf0f273",
   "lastOpenFiles": [
     "network-monitoring.md",
     "anomaly-detection.md",
