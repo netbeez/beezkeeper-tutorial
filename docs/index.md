@@ -35,5 +35,9 @@ Welcome to the NetBeez Tutorial! This guide was written with our users in mind a
 	4. [Weekly Reports](#weekly-reports)
 	5. [API](#api)
 7. [Troubleshooting With NetBeez](troubleshooting-with-netbeez.md)
+	1. [Using the Buzz Tab](#using-the-buzz-tab)
+	2. [Interactive console](#interactive-console)
+	3. [Ad-hoc tests](#ad-hoc-tests)
+8. [Resources](resources.md)
 
 

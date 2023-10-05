@@ -2,6 +2,10 @@
 
 NetBeez can be helpful in troubleshooting network and application performance issues in large and complex Wide Area Networks (WAN). The real-time data reported by the agents is used to identify the scale (e.g. number of locations) and layer (e.g. network versus application) of performance issues.
 
+- [Using the Buzz Tab](#using-the-buzz-tab)
+- [Interactive console](#interactive-console)
+- [Ad-hoc tests](#ad-hoc-tests)
+
 ## Using the Buzz Tab
 
 The Buzz Tab was designed to provide the user with the most important information that NetBeez collects, such as:
