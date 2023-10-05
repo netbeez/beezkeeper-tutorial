@@ -34,6 +34,32 @@
             }
           },
           {
+            "id": "3725b15040bf7826",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "troubleshooting-with-netbeez.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a13c43f4c30ef89e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5f3cb64cbfdca512",
             "type": "leaf",
             "state": {
@@ -47,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reports-and-api.md",
+                "file": "troubleshooting-with-netbeez.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "reports-and-api.md",
+                "file": "troubleshooting-with-netbeez.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "reports-and-api.md"
+                "file": "troubleshooting-with-netbeez.md"
               }
             }
           },
@@ -192,13 +218,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7f344c3967a0b54",
+  "active": "3725b15040bf7826",
   "lastOpenFiles": [
+    "index.md",
+    "troubleshooting-with-netbeez.md",
+    "reports-and-api.md",
     "assets/weekly-status-report.png",
     "assets/new-report.png",
     "assets/reports-beta.png",
-    "index.md",
-    "reports-and-api.md",
     "anomaly-detection.md",
     "wifi-monitoring.md",
     "assets/data-retention-config.png",
@@ -208,7 +235,6 @@
     "assets/enable-percentile-mean.png",
     "assets/percentile-mean-rt-graph.png",
     "assets/performance-watermark.png",
-    "assets/performance-baseline.png",
     "server-deployment.md",
     "network-monitoring.md",
     "overview.md",
