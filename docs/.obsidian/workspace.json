@@ -11,9 +11,12 @@
             "id": "3ac497b055fe142b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/Pasted image 20231004210020.png"
+                "file": "anomaly-detection.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/Pasted image 20231004210020.png",
+                "file": "anomaly-detection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/Pasted image 20231004210020.png",
+                "file": "anomaly-detection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/Pasted image 20231004210020.png"
+                "file": "anomaly-detection.md"
               }
             }
           },
@@ -164,18 +167,19 @@
   },
   "active": "c7f344c3967a0b54",
   "lastOpenFiles": [
+    "assets/data-retention-config.png",
+    "assets/email-notification-settings.png",
+    "assets/incident-detector-threshold-configuration.png",
+    "assets/agent-device-alerts.png",
+    "assets/enable-percentile-mean.png",
+    "assets/percentile-mean-rt-graph.png",
+    "assets/performance-watermark.png",
+    "assets/performance-baseline.png",
     "anomaly-detection.md",
-    "assets/Pasted image 20231004210047.png",
     "assets/Pasted image 20231004210020.png",
     "assets/alert-profiles.png",
     "assets/anomaly-detection-high-level.png",
     "wifi-monitoring.md",
-    "assets/packet-capture.png",
-    "assets/wireless-on-rwa.png",
-    "assets/wired-tests-on-wireless.png",
-    "assets/wifi-network-config-band-hopping.png",
-    "assets/tests-table-wifi-hopping.png",
-    "assets/real-time-wifi-metrics.png",
     "server-deployment.md",
     "index.md",
     "network-monitoring.md",
