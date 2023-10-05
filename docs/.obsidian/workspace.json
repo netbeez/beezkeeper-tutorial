@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "troubleshooting-with-netbeez.md",
+                "file": "index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "troubleshooting-with-netbeez.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "troubleshooting-with-netbeez.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "troubleshooting-with-netbeez.md"
+                "file": "index.md"
               }
             }
           },
@@ -220,8 +220,8 @@
   },
   "active": "3725b15040bf7826",
   "lastOpenFiles": [
-    "index.md",
     "troubleshooting-with-netbeez.md",
+    "index.md",
     "reports-and-api.md",
     "assets/weekly-status-report.png",
     "assets/new-report.png",
