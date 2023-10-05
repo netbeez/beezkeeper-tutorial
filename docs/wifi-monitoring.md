@@ -7,10 +7,9 @@
 	- [WiFi connection timing](#wifi-connection-timing)
 	- [SSID hopping](#ssid-hopping)
 		- [Band hopping](#band-hopping)
-- [WiFi monitoring on remote worker agents](#wifi-monitoring-on-remote-worker-agents)
 	- [Wired Tests on WiFi Agents](#wired-tests-on-wifi-agents)
 	- [Packet Capture](#packet-capture)
-
+- [WiFi monitoring on remote worker agents](#wifi-monitoring-on-remote-worker-agents)
 
 NetBeez is a valuable tool to collect network performance data needed to troubleshoot WiFi networks. Both NetBeez network and remote worker agents support WiFi metrics. The following table summarizes the features that each agent type supports.
 

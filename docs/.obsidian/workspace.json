@@ -19,8 +19,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8a497e93f670ffe3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5f3cb64cbfdca512",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wifi-monitoring.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "anomaly-detection.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "anomaly-detection.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "anomaly-detection.md"
+                "file": "index.md"
               }
             }
           },
@@ -165,8 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7f344c3967a0b54",
+  "active": "8a497e93f670ffe3",
   "lastOpenFiles": [
+    "anomaly-detection.md",
+    "index.md",
+    "wifi-monitoring.md",
     "assets/data-retention-config.png",
     "assets/email-notification-settings.png",
     "assets/incident-detector-threshold-configuration.png",
@@ -175,13 +205,9 @@
     "assets/percentile-mean-rt-graph.png",
     "assets/performance-watermark.png",
     "assets/performance-baseline.png",
-    "anomaly-detection.md",
     "assets/Pasted image 20231004210020.png",
     "assets/alert-profiles.png",
-    "assets/anomaly-detection-high-level.png",
-    "wifi-monitoring.md",
     "server-deployment.md",
-    "index.md",
     "network-monitoring.md",
     "overview.md",
     "Overview/targets.md",
