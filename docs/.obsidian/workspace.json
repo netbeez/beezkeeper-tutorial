@@ -4,47 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8141e49b2535dbb0",
+        "id": "4b5be858fe2c8ede",
         "type": "tabs",
         "children": [
           {
-            "id": "d4e58a06100bd330",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "anomaly-detection.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c1cdbd5f1d4f93c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "anomaly-detection.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8cfb4534cdf0f273",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.12"
-              }
-            }
-          },
-          {
-            "id": "cc15b1f34f5c7727",
+            "id": "3ac497b055fe142b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -57,30 +21,17 @@
             }
           },
           {
-            "id": "64d5feac3ed1eb36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f5153f8dfe5a6cac",
+            "id": "fdd846f988c866d1",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "assets/11.scheduled-test-schedule.png"
+                "file": "assets/Pasted image 20231004205038.png"
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "assets/Pasted image 20231004205038.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "assets/Pasted image 20231004205038.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "assets/Pasted image 20231004205038.png"
               }
             }
           },
@@ -225,24 +176,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "64d5feac3ed1eb36",
+  "active": "fdd846f988c866d1",
   "lastOpenFiles": [
-    "network-monitoring.md",
-    "index.md",
     "wifi-monitoring.md",
-    "anomaly-detection.md",
-    "overview.md",
-    "assets/29.voip-test-results.png",
-    "assets/28.network-speed-results-3d.png",
-    "assets/27.network-speed-results.png",
-    "assets/26.iperf-test-results-3d.png",
-    "assets/25.iperf-test-details.png",
-    "assets/24.vpn-testing.png",
-    "assets/23.gateway-testing.png",
-    "assets/22.tcp-testing.png",
-    "assets/21.edit-dns-template.png",
-    "assets/20.new-dns-template.png",
+    "assets/Pasted image 20231004205038.png",
+    "assets/tests-table-wifi-hopping.png",
+    "assets/real-time-wifi-metrics.png",
+    "assets/wifi-timing-chart.png",
+    "assets/new-wifi-network-wizard.png",
+    "assets/agent-wifi-tab.png",
+    "assets/11.scheduled-test-schedule.png",
+    "assets/wifi-hardware-agent.png",
     "server-deployment.md",
+    "anomaly-detection.md",
+    "assets/29.voip-test-results.png",
+    "index.md",
+    "network-monitoring.md",
+    "overview.md",
+    "assets/28.network-speed-results-3d.png",
     "Overview/targets.md",
     "Overview/agents.md",
     "Overview/index.md",
