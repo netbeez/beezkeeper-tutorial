@@ -112,16 +112,22 @@ An agent that is hopping through two or more SSIDs will display as many copies o
 
 To enable band hopping, create two separate WiFi networks with the same SSID. In the first WiFi network configuration, force the agents to connect to the 2.4 GHz. In the second one, force the agents to connect to the 5.0GHz band. Lastly, add the two SSID into a hopping group.
 
-![](assets/Pasted%20image%2020231004205038.png)
+![](assets/wifi-network-config-band-hopping.png)
+### Wired Tests on WiFi Agents
 
+WiFi sensors have the ability to run real-time tests on the ethernet interface. Wired tests on WiFi are enabled on a per-target basis. If enabled on a target with WiFi sensors assigned to it, those sensors will run that target's tests on the WiFi as well as the wired interface simultaneously. This feature is only available on the Network WiFi agents.
+
+![](assets/wired-tests-on-wireless.png)
+### Packet Capture
+
+Packet capture is available for WiFi sensors in the ad-hoc tab of the NetBeez dashboard. During this operation, the NetBeez sensor pauses real-time and scheduled tests for the duration of the packet capture process. At the end of the packet capture, you can download the captured frames in a pcap file for further analysis (using tools like Wireshark), while the sensor resumes its regular network monitoring operations.
+
+![](assets/packet-capture.png)
 ## WiFi monitoring on remote worker agents
 
 NetBeez remote worker agents for Windows and Mac support the reporting of WiFi metrics in real-time to the dashboard. Similar to network agents, remote workers’ WiFi metrics are displayed in a separate tab within the details view.
 
-  
-  
-
-![](https://lh5.googleusercontent.com/LEiS6FqYISxoOtkvE44mhcDkrisl5c1--T4VsZDL86F5rH5zh6MlZqGvnvCsP2bczrCC4cNxHLkEK4LhufKvZEng9sNagQj1APBFDMYwj4Qfe8FcKf-zqAMI2E8_E4dX5V5wflHEd8GjxvrxJYqiLHU)
+![](assets/wireless-on-rwa.png)
 
 Please keep in mind that the Windows and macOS operating systems don’t report the same data. The table below lists all the metrics available based on the operating system where the remote worker agent is running.
 
@@ -145,15 +151,3 @@ In both cases, the Wi-Fi metrics collected by the NetBeez agent are sent in real
 NetBeez remote worker agents also report connection and disconnection events to the dashboard. This information is valuable in many cases as it tells the network support team when the user is connected or disconnected from the wireless network. 
 
 Via the NetBeez dashboard the user can also perform an SSID scan to verify if any wireless networks in proximity are using the same channel and causing performance issues to the remote user. Here’s an example of an SSID scan.
-
-### Wired Tests on WiFi Agents
-
-WiFi sensors have the ability to run real-time tests on the ethernet interface. Wired tests on WiFi are enabled on a per-target basis. If enabled on a target with WiFi sensors assigned to it, those sensors will run that target's tests on the WiFi as well as the wired interface simultaneously. This feature is only available on the Network WiFi agents.
-
-![](https://lh3.googleusercontent.com/_mSeatPRcLGcgPAJdRCUa5DLYRHreWevN4INWSYJQgNhkwkCKfjg_chLIioGvr4S9-2Aeio177zfqia6srI9kkDkL8RqFvzbGahbZlWrv2bwjoMeQmkVENijHGOqPsrr-kphf7FvK0kIVN-6Q1s6QGY)
-
-### Packet Capture
-
-Packet capture is available for WiFi sensors in the ad-hoc tab of the NetBeez dashboard. During this operation, the NetBeez sensor pauses real-time and scheduled tests for the duration of the packet capture process. At the end of the packet capture, you can download the captured frames in a pcap file for further analysis (using tools like Wireshark), while the sensor resumes its regular network monitoring operations.
-
-![](https://lh6.googleusercontent.com/JWWuPrDiDpA-S3og0N40kBgz9CdNkAJkNO2GsU1awqHE-RE59HXb_mo7DKkppOzctZGC3B-vI7rwQpsk82PhXzXl9U5X3OE4wwsruqOeHM4l1dquqJWRpBqc69dA4_K4w8or1DTNtQ24kQC8lbFdo7I)

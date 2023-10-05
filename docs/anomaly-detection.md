@@ -4,14 +4,14 @@ Anomaly detection is one of the primary functionalities of NetBeez. Fast and pro
 
 There are three main components of the NetBeez anomaly detection system:
 
-- Alerts - Alerts are triggered by real-time tests based on certain conditions, as defined in alert detectors; alert detectors are assigned to targets.
+- **Alerts** - Alerts are triggered by real-time tests based on certain conditions, as defined in alert detectors; alert detectors are assigned to targets.
     
-- Incidents - Incidents are triggered by an agent, target, or WiFi network when a certain percentage of tests trigger alerts (incident threshold); incidents are a good way to reduce the noise from multiple alerts related to the same resource.
+- **Incidents** - Incidents are triggered by an agent, target, or WiFi network when a certain percentage of tests trigger alerts (incident threshold); incidents are a good way to reduce the noise from multiple alerts related to the same resource.
     
-- Notifications - Notifications are delivered via email, Slack, SNMP traps, and other methods when an alert is triggered and/or an incident is raised.
+- **Notifications** - Notifications are delivered via email, Slack, SNMP traps, and other methods when an alert is triggered and/or an incident is raised.
     
 
-![](https://lh3.googleusercontent.com/cLKIXf-OAsSO_mttC_bPo94_58Y133w9QGrir2TM4PPor_V4Bj41RuA_ydiwf8d8yUVBZFKU-5kFcUxB6OHhV7aeTDA7EGfWimPSbyJ5KFmzrYL7csmcBlrBPIB_AEsIUzswLw33O_jrUzZcqpYB7cw)
+![](assets/anomaly-detection-high-level.png)
 
 If the above chart is not clear, keep reading. In the next paragraphs, we’ll review in detail each one of these components.
 ## Alert profiles
@@ -22,28 +22,25 @@ Alert profiles are assigned to targets to detect problems such as loss of connec
 
 There are five types of alert profiles:
 
-1. Up-Down - An up-down alert is triggered by a real-time test when it fails for a given number of consecutive tries. By default, the up-down multiplier is set to five. This value can be adjusted by the user at any time. 
+1. **Up-Down** - An up-down alert is triggered by a real-time test when it fails for a given number of consecutive tries. By default, the up-down multiplier is set to five. This value can be adjusted by the user at any time. 
+
+	![](assets/alert-profiles.png)
+
+	Up-down alerts are useful to detect loss of reachability to a remote host, network, or application.
+
+2. **Performance Baseline** - A baseline alert is triggered by a real-time test when it detects a performance degradation issue. Performance degradation is detected by comparing the short-term moving average to its long-term, which is considered the performance baseline. In fact, for each test, the server calculates the following moving averages:
+
+	1. Short-term: 1 minute, 15 minutes, 1 hour, 4 hours.
+	2. Long-term: 1 day, 1 week, 1 month.
     
 
-![](https://lh5.googleusercontent.com/2Y1iTU97vMBhU7YEymPQ92y9WTLxRncxlb1ebJdET6IDRPET5X1Qcp-kiFsBZT0PFPVFZZc787Y6_qSwoN8qOSIIFfkZhtWLXPQFb9L_RzrxcA6XVVPyaXXqMAdcH8_F52CB9uCgDzGoBEZZMI8RmpU)
+	If the short-term average of a test is a certain number of times higher than its long-term average, an alert is triggered. 
 
-Up-down alerts are useful to detect loss of reachability to a remote host, network, or application.
+	![](assets/Pasted%20image%2020231004210047.png)
 
-2. Performance Baseline - A baseline alert is triggered by a real-time test when it detects a performance degradation issue. Performance degradation is detected by comparing the short-term moving average to its long-term, which is considered the performance baseline. In fact, for each test, the server calculates the following moving averages:
-    
+	This type of alert profile is suited when a target is applied to many agents that have different performance results against the same application, due to their geographical location or other factors.
 
-1. Short-term: 1 minute, 15 minutes, 1 hour, 4 hours.
-    
-2. Long-term: 1 day, 1 week, 1 month.
-    
-
-If the short-term average of a test is a certain number of times higher than its long-term average, an alert is triggered. 
-
-![](https://lh4.googleusercontent.com/Ks3jdvyIGzod_0HwVFz8FqRyaPR7GVGIDfSHj8LmyybPlUYMlVfdowajc47WlP74Ss2fOlB92KV8d5X9IMUczNtNVPxdSM9TKD1uzV_oCs-EVsmG83JxQVIpVuPKzAdPRG3V4pbwiFdTa8PuRd_hs8k)
-
-This type of alert profile is suited when a target is applied to many agents that have different performance results against the same application, due to their geographical location or other factors.
-
-3. Performance Watermark - Watermark alerts are triggered when a real-time test doesn’t meet specific performance requirements. These alerts are used to enforce service level agreements with network services and applications. Watermark alerts are configured by comparing a short-term average against a user-defined threshold (eg. packet loss is higher than 5% or DNS resolution time is higher than 100 ms).
+3. **Performance Watermark** - Watermark alerts are triggered when a real-time test doesn’t meet specific performance requirements. These alerts are used to enforce service level agreements with network services and applications. Watermark alerts are configured by comparing a short-term average against a user-defined threshold (eg. packet loss is higher than 5% or DNS resolution time is higher than 100 ms).
     
 
 ![](https://lh5.googleusercontent.com/4HDkntP6SNytDj9_3vpzHYpwNWBlRau1Kbs3g6c7yU2IHU2cR2G0_A5-iok33TA96uX1IJ8ocD9wZT0GgoBa-UjmKHP3o3VRVJoOQIc9ilF5S2bqY1T0oAkNert-XaF-j5XFhXO7spRy0ltNj3WqmJk)
