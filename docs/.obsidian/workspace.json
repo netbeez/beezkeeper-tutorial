@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "reports-and-api.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "reports-and-api.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "reports-and-api.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "reports-and-api.md"
               }
             }
           },
@@ -192,10 +192,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a497e93f670ffe3",
+  "active": "c7f344c3967a0b54",
   "lastOpenFiles": [
-    "anomaly-detection.md",
+    "assets/weekly-status-report.png",
+    "assets/new-report.png",
+    "assets/reports-beta.png",
     "index.md",
+    "reports-and-api.md",
+    "anomaly-detection.md",
     "wifi-monitoring.md",
     "assets/data-retention-config.png",
     "assets/email-notification-settings.png",
@@ -205,8 +209,6 @@
     "assets/percentile-mean-rt-graph.png",
     "assets/performance-watermark.png",
     "assets/performance-baseline.png",
-    "assets/Pasted image 20231004210020.png",
-    "assets/alert-profiles.png",
     "server-deployment.md",
     "network-monitoring.md",
     "overview.md",

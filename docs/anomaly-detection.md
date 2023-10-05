@@ -14,6 +14,14 @@ There are three main components of the NetBeez anomaly detection system:
 ![](assets/anomaly-detection-high-level.png)
 
 If the above chart is not clear, keep reading. In the next paragraphs, we’ll review in detail each one of these components.
+
+- [Alert profiles](#alert-profiles)
+	- [Types of alert profiles](#types-of-alert-profiles)
+	- [Percentile-based mean](#percentile-based-mean)
+- [Device alerts](#device-alerts)
+- [Incidents](#incidents)
+- [Notifications](#notifications)
+
 ## Alert profiles
 
 Alert profiles are assigned to targets to detect problems such as loss of connectivity or performance degradation to a remote service or application. Alert profiles are test-specific, that is, are related to a specific type of test (ping, DNS, HTTP, traceroute, …). NetBeez offers default alert profiles, which can be edited or deleted. The user can create new alert profiles, and attach them to new or existing targets. Any change to an alert profile will be immediately pushed to all the targets where that profile has been enabled.
@@ -84,21 +92,3 @@ Even when not in front of the dashboard, users can receive notifications on aler
 ![](assets/email-notification-settings.png)
 
 NetBeez also provides integrations with many third-party tools, such as Splunk, PagerDuty, and Slack. You can learn more about these integrations on the [online documentation](https://netbeez.zendesk.com/hc/en-us/sections/201825346-Integrations-and-API).
-
-### Data retention
-
-NetBeez supports user-defined data retention settings. The user can set for how long the central server should retain performance data collected by the agents. In practice, data retention dictates how far back historical test data and reports data can go. Some of the variables to be set are:
-
-- Raw results - This is the raw data from test results, where each data point is the result of a test. Raw test data is displayed in real-time and historical graphs.
-    
-- 1-min average - This is the average of test results collected in one minute. The 1-min average is used to generate performance alerts and reports.
-    
-- 1-hour average - This is the average of test results collected in one hour. The 1-hour average is used to generate performance alerts and reports.
-    
-- 24-hour average  - This is the average of test results collected in twenty-four hours. The 24-hour average is used to generate performance alerts and reports.
-    
-The resulting disk space required is dependent on the time period selected, the number of tests, and their interval. This configuration setting can be easily applied from the NetBeez Settings in a few clicks. 
-
-![](assets/data-retention-config.png)
-
-Please refer to the [online documentation page](https://netbeez.zendesk.com/hc/en-us/articles/201582539-Settings-Data-Retention) to learn more about this.
