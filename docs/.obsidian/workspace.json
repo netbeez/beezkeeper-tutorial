@@ -47,9 +47,12 @@
             "id": "cc15b1f34f5c7727",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.13"
+                "file": "wifi-monitoring.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           },
@@ -77,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -143,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "anomaly-detection.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "anomaly-detection.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "anomaly-detection.md"
+                "file": "index.md"
               }
             }
           },
@@ -222,12 +225,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cc15b1f34f5c7727",
+  "active": "64d5feac3ed1eb36",
   "lastOpenFiles": [
     "network-monitoring.md",
-    "anomaly-detection.md",
-    "wifi-monitoring.md",
     "index.md",
+    "wifi-monitoring.md",
+    "anomaly-detection.md",
     "overview.md",
     "assets/29.voip-test-results.png",
     "assets/28.network-speed-results-3d.png",
