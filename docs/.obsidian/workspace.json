@@ -86,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resources.md",
+                "file": "wifi-monitoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resources.md",
+                "file": "wifi-monitoring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resources.md"
+                "file": "wifi-monitoring.md"
               }
             }
           },
@@ -231,10 +231,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3725b15040bf7826",
+  "active": "5f3cb64cbfdca512",
   "lastOpenFiles": [
-    "index.md",
     "resources.md",
+    "index.md",
     "troubleshooting-with-netbeez.md",
     "reports-and-api.md",
     "assets/weekly-status-report.png",
