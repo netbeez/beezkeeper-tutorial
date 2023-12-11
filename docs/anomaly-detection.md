@@ -60,7 +60,7 @@ When calculating an average for a given time period, all test results are accoun
 
 ![](assets/percentile-mean-rt-graph.png)
 
-NetBeez supports the use of a percentile-based mean (95th percentile), which filters out outliers that fall two times outside the standard deviation interval (from the mathematical average). The benefit of this function is that should a single data point skew the mathematical average, the percentile-based mean won't be affected, thus reducing the number of false positives (alerts noise). To enable this feature, the user can enable the use of a percentile-based mean in the [Anomaly Detection settings](https://docs.google.com/document/d/1GsIWkWI3mMj2xqG0Ce_1BNrb8t8RhePK_bokT24sjo4/edit#heading=h.n6ogakcoekwr) section.
+NetBeez supports the use of a percentile-based mean (95th percentile), which filters out outliers that fall two times outside the standard deviation interval (from the mathematical average). The benefit of this function is that should a single data point skew the mathematical average, the percentile-based mean won't be affected, thus reducing the number of false positives (alerts noise). To enable this feature, the user can enable the use of a percentile-based mean in the Anomaly Detection settings section.
 
 ![](assets/enable-percentile-mean.png)
 
@@ -80,15 +80,15 @@ Incidents are periods of degraded or otherwise abnormal performance of an agent,
 
 An incident is triggered when a certain percentage of tests within one agent, target, or WiFi network trigger an alert. Such thresholds are defined by the user in the NetBeez “Incidents Configuration” settings, under the “Anomaly Detection” section.
 
-![](assets/incident-detector-threshold-configuration.png)
+![](assets/incident-thresholds.png)
 
 Incidents can be acknowledged, and users can post comments to include more information about the undergoing performance issue, or explain the reason why a specific incident was acknowledged or de-acknowledged.
 
 If you want to read more about Incidents, please consult [this documentation page](https://netbeez.zendesk.com/hc/en-us/articles/115003579411-Incidents).
 ## Notifications
 
-Even when not in front of the dashboard, users can receive notifications on alerts and incidents. NetBeez supports different delivery methods for notifying users about new alerts and incidents raised and closed, such as SNMP traps, Syslog messages, and emails. For each delivery method, the user can pick what to receive: only alerts, only incidents, or both of them. In general, it’s good practice to enable notifications for agent incidents and alerts, target incidents, and wifi incidents.
+Even when not in front of the dashboard, users can receive notifications on alerts and incidents. NetBeez supports different delivery methods for notifying users about new alerts and incidents raised and closed, such as SNMP traps, Syslog messages, and emails. For each delivery method, the user can pick what to receive: alerts, aggregate alerts, incidents, or any combination of them. In general, it’s good practice to enable notifications for agent incidents and alerts, target incidents, and wifi incidents.
 
-![](assets/email-notification-settings.png)
+![](assets/notification-settings.png)
 
-NetBeez also provides integrations with many third-party tools, such as Splunk, PagerDuty, and Slack. You can learn more about these integrations on the [online documentation](https://netbeez.zendesk.com/hc/en-us/sections/201825346-Integrations-and-API).
+NetBeez also provides integrations with many third-party tools, such as Splunk, PagerDuty, ServiceNow, Microsoft Teams, webhooks and Slack. You can learn more about these integrations on the [online documentation](https://netbeez.zendesk.com/hc/en-us/sections/201825346-Integrations-and-API).

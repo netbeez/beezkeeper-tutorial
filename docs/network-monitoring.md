@@ -118,7 +118,7 @@ To monitor a web service include the following tests:
     
 - **HTTP** - Performs an HTTP(S) GET to the URL provided in the address, verifying that the service is available to the users.
     
-By comparing the status and performance of these three tests from multiple agents, NetBeez can determine whether a problem is related to the network, the webserver, or the DNS. In the [anomaly detection](https://docs.google.com/document/d/1GsIWkWI3mMj2xqG0Ce_1BNrb8t8RhePK_bokT24sjo4/edit#heading=h.n6ogakcoekwr) section of this manual, we’ll cover in detail alerts, incidents, and notifications.
+By comparing the status and performance of these three tests from multiple agents, NetBeez can determine whether a problem is related to the network, the webserver, or the DNS. In the [anomaly detection](anomaly-detection.md) section of this manual, we’ll cover in detail alerts, incidents, and notifications.
 
 ![Test template details](assets/19.target-template-details.png)
 

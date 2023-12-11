@@ -3,7 +3,8 @@
 NetBeez users can generate reports to review historical network and application performance data based on agents deployed, targets, and scheduled tests configured. Reports can be generated on the dashboard or can be scheduled to be sent via email. 
 
 - [Legacy Reports](#legacy-reports)
-- [Reports Beta](#reports-beta)
+- [Generated Reports](#generated-reports)
+- [Report Schedules](#report-schedules)
 - [Email reports](#email-reports)
 - [Weekly Reports](#weekly-reports)
 - [API](#api)
@@ -23,13 +24,23 @@ In the Legacy Reports section under the Reports tab is located the legacy report
 
 When generating a report on the dashboard, it’s possible to extract such a report in PDF format or save that report in a preset, which is the definition of the report type along with the input parameters selected (e.g. report time period, elements to be included in the report, etc.). As we’ll see in the next paragraph, presets must be created to schedule email reports.
 
-## Reports Beta
+## Generated Reports
 
-![](assets/reports-beta.png)
+![](assets/generated-reports.png)
 
 The new reports experience is in beta so the functionality currently is limited. For this reason, the fully functional reports are available under the "Legacy Reports” subtab. The redesign makes generating reports easier and more intuitive. As of version 8.0, network status reports and agent reports can be generated Future releases will include targets and scheduled test reports. Please be aware that in the current version there is no email functionality or PDF download option. The Legacy Reporting tab will remain for these needs until the new Reports Beta is completed.
 
-![](assets/new-report.png)
+![](assets/generate-report.png)
+
+## Report Schedules
+
+![](assets/report-schedules.png)
+
+NetBeez users can configure reports to be generated at set schedules (cron style) and emails will be sent out to a list of specified emails. The sent emails include a link that can be followed by anyone who has it regardless of whether they have a NetBeez account or not.
+
+The public access of reports can be turned on and off by the administrator at any time under Settings > Users.
+
+![](assets/users-public-report.png)
 
 ## Email reports
 
