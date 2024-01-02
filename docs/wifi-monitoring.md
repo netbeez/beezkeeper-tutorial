@@ -43,8 +43,8 @@ WiFi network agents must be configured with the SSID to be monitored. For this r
 	- WPA with EAP methodologies (also called Radius or 802.1x). 
     
 ![](assets/new-wifi-network-wizard.png)
-If you wish to learn more about this configuration, please check out [this documentation page](https://netbeez.zendesk.com/hc/en-us/articles/360006974412-Add-Edit-WiFi-Network).
 
+If you wish to learn more about this configuration, please check out [this documentation page](https://netbeez.zendesk.com/hc/en-us/articles/360006974412-Add-Edit-WiFi-Network).
 #### WiFi metrics
 
 A WiFi network agent reports the following WiFi metrics about the monitored network:
@@ -102,7 +102,7 @@ SSID hopping works by having WiFi sensors connect to the first SSID for a certai
 
 ![](assets/real-time-wifi-metrics.png)
 
-The WiFi connection timing feature in this case is provided by the hopping mechanism itself. At each hop, the WiFi sensors test how long it takes to connect to the next SSID. If a WiFi sensor can’t authenticate, or get a DHCP address, within the “WiFi disconnection threshold”, it will trigger an alert. By default, the WiFi disconnection threshold is set to 60 seconds. This value can be updated in the [Anomaly detection](https://docs.google.com/document/d/1GsIWkWI3mMj2xqG0Ce_1BNrb8t8RhePK_bokT24sjo4/edit#heading=h.n6ogakcoekwr) (under the “Device alerts”) section of the NetBeez dashboard.
+The WiFi connection timing feature in this case is provided by the hopping mechanism itself. At each hop, the WiFi sensors test how long it takes to connect to the next SSID. If a WiFi sensor can’t authenticate, or get a DHCP address, within the “WiFi disconnection threshold”, it will trigger an alert. By default, the WiFi disconnection threshold is set to 60 seconds. This value can be updated in the [Anomaly detection](anomaly-detection.md) (under the “Device alerts”) section of the NetBeez dashboard.
 
 An agent that is hopping through two or more SSIDs will display as many copies of the same test as many SSID it’s monitoring. This is done to identify performance or connectivity issues on a per-SSID basis. For example, in the screenshot below the SSID “lab-test” is reporting performance issues on ping tests that the SSID “lab-test-guest” is not.
 
