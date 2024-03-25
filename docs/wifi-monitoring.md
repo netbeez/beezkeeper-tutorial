@@ -1,15 +1,16 @@
 # WiFi Monitoring
 
-- [WiFi Monitoring on network agents](#wifi-monitoring-on-network-agents)
-	- [WiFi networks](#wifi-networks)
-		- [WiFi metrics](#wifi-metrics)
-	- [SSID scanning](#ssid-scanning)
-	- [WiFi connection timing](#wifi-connection-timing)
-	- [SSID hopping](#ssid-hopping)
-		- [Band hopping](#band-hopping)
-	- [Wired Tests on WiFi Agents](#wired-tests-on-wifi-agents)
-	- [Packet Capture](#packet-capture)
-- [WiFi monitoring on remote worker agents](#wifi-monitoring-on-remote-worker-agents)
+- [WiFi Monitoring on network agents](<#wifi monitoring on network agents>)
+	- [WiFi networks](<#wifi networks>)
+		- [WiFi metrics](<#wifi metrics>)
+	- [SSID scanning](<#ssid scanning>)
+	- [WiFi connection timing](<#wifi connection timing>)
+	- [SSID hopping](<#ssid hopping>)
+		- [Band hopping](<#band hopping>)
+		- [WiFi 6 / WPA3](<#WiFi 6 / WPA3>)
+	- [Wired Tests on WiFi Agents](<#wired tests on wifi agents>)
+	- [Packet Capture](<#packet capture>)
+- [WiFi monitoring on remote worker agents](<#wifi monitoring on remote worker agents>)
 
 NetBeez is a valuable tool to collect network performance data needed to troubleshoot WiFi networks. Both NetBeez network and remote worker agents support WiFi metrics. The following table summarizes the features that each agent type supports.
 
@@ -37,10 +38,15 @@ WiFi network agents must be configured with the SSID to be monitored. For this r
 - Network verification test - This optional test will be run right after an agent is connected to an SSID;
 - Band - The profile can be set to a specific band (optional);
 - Security type - WiFi agents support the following security settings:
-	- Open,
-	- WEP,
-	- WPA pre-shared key, 
-	- WPA with EAP methodologies (also called Radius or 802.1x). 
+	- Standard Open
+	- Enhanced Open
+	- WEP64
+	- WEP128
+	- WEP256
+	- WPA2-PSK
+	- WPA2-EAP
+	- WPA3-PSK
+	- WPA3-EAP
     
 ![](assets/new-wifi-network-wizard.png)
 
@@ -49,18 +55,19 @@ If you wish to learn more about this configuration, please check out [this docum
 
 A WiFi network agent reports the following WiFi metrics about the monitored network:
 
-|Metric to be plotted|Data Type|
-|---|---|
-|TX/RX data on WLAN interface|Bps (number)|
-|SSID|string up to 32 chars|
-|BSSID|HEX string similar to MAC address (FF:FF:FF:FF:FF:FF)|
-|Signal Strength (RSSI)|dBm|
-|Link Quality|%|
-|Bitrate|Mbps|
-|Channel|Numerical value based on band|
-| |       - 5GHz - between 7 and 196 |
-| |       - 2.4 GHz - between 1 and 14 |
-|Channel Frequency|GHz ([https://en.wikipedia.org/wiki/List_of_WLAN_channels](https://en.wikipedia.org/wiki/List_of_WLAN_channels))|
+| Metric to be plotted         | Data Type                                                                                                        |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| TX/RX data on WLAN interface | Bps (number)                                                                                                     |
+| SSID                         | string up to 32 chars                                                                                            |
+| BSSID                        | HEX string similar to MAC address (FF:FF:FF:FF:FF:FF)                                                            |
+| Signal Strength (RSSI)       | dBm                                                                                                              |
+| Link Quality                 | %                                                                                                                |
+| Bitrate                      | Mbps                                                                                                             |
+| Channel                      | Numerical value based on band                                                                                    |
+|                              | - 2.4 GHz - between 1 and 14                                                                                     |
+|                              | - 5GHz - between 7 and 196                                                                                       |
+|                              | - 6GHz - between 1 and 233                                                                                       |
+| Channel Frequency            | GHz ([https://en.wikipedia.org/wiki/List_of_WLAN_channels](https://en.wikipedia.org/wiki/List_of_WLAN_channels)) |
 
 The WiFi metrics are available under an agent’s details view, in a separate tab labeled “WIRELESS”. Please refer to the following screenshot for more information.
 
@@ -71,25 +78,17 @@ A WiFi network agent can run scans of locally available wireless networks. Users
 An SSID scan reports the following information:
 
 - SSID
-    
 - BSSID
-    
 - Signal strength
-    
 - Frequency
-    
 - Channel
-    
 ### WiFi connection timing
 
 If a WiFi network is configured with a reconnection interval, the WiFi agents assigned to it will periodically test and time the WiFi connection process. The WiFi connection process is divided into three phases:
 
 1. Association with a BSSID (access point) in proximity
-    
 2. Authentication with the selected SSID
-    
 3. DHCP to obtain an IP address
-    
 
 ![](assets/wifi-timing-chart.png)
 
@@ -111,7 +110,18 @@ An agent that is hopping through two or more SSIDs will display as many copies o
 
 To enable band hopping, create two separate WiFi networks with the same SSID. In the first WiFi network configuration, force the agents to connect to the 2.4 GHz. In the second one, force the agents to connect to the 5.0GHz band. Lastly, add the two SSID into a hopping group.
 
+Please note, the 6.0 GHz is intended for WiFi agents that support WiFi 6. 
+
 ![](assets/wifi-network-config-band-hopping.png)
+
+#### WiFi 6 / WPA3
+
+WiFi 6 represents a significant leap forward from WiFi 5, boasting speeds up to three times faster, lower latency, and increased device capacity, making it ideal for dense network environments and real-time applications like video conferencing. 
+
+On the security front, WPA3, the latest WiFi security standard, offers robust authentication protocols and individualized data encryption, significantly enhancing network security over its predecessor WPA2. 
+
+For those interested in upgrading their current agents to utilize WiFi 6 functionality, contacting the [NetBeez support team](mailto:support@netbeez.net). For more information on WiFi 6/WPA3, read about it in our documentation [here](https://netbeez.zendesk.com/hc/en-us/articles/24614621536653-WiFi-6-WPA3).
+
 ### Wired Tests on WiFi Agents
 
 WiFi sensors have the ability to run real-time tests on the ethernet interface. Wired tests on WiFi are enabled on a per-target basis. If enabled on a target with WiFi sensors assigned to it, those sensors will run that target's tests on the WiFi as well as the wired interface simultaneously. This feature is only available on the Network WiFi agents.
@@ -145,7 +155,7 @@ Please keep in mind that the Windows and macOS operating systems don’t report 
 |Channel Frequency|GHz ([https://en.wikipedia.org/wiki/List_of_WLAN_channels](https://en.wikipedia.org/wiki/List_of_WLAN_channels))|yes|yes|
 |[MCS](https://netbeez.net/blog/what-is-mcs-index/)|Value between 0 and 9|no|yes|
 
-In both cases, the Wi-Fi metrics collected by the NetBeez agent are sent in real-time to the server. The data is then displayed on the user dashboard under an agent’s details view. The data is also stored in the database for historical review and is available based on the data retention period defined by the user.
+In both cases, the WiFi metrics collected by the NetBeez agent are sent in real-time to the server. The data is then displayed on the user dashboard under an agent’s details view. The data is also stored in the database for historical review and is available based on the data retention period defined by the user.
 
 NetBeez remote worker agents also report connection and disconnection events to the dashboard. This information is valuable in many cases as it tells the network support team when the user is connected or disconnected from the wireless network. 
 

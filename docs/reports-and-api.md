@@ -2,25 +2,21 @@
 
 NetBeez users can generate reports to review historical network and application performance data based on agents deployed, targets, and scheduled tests configured. Reports can be generated on the dashboard or can be scheduled to be sent via email. 
 
-- [Legacy Reports](#legacy-reports)
-- [Generated Reports](#generated-reports)
-- [Report Schedules](#report-schedules)
-- [Email reports](#email-reports)
-- [Weekly Reports](#weekly-reports)
+- [Legacy Reports](<#legacy reports>)
+- [Generated Reports](<#generated reports>)
+- [Report Schedules](<#report schedules>)
+- [Email reports](<#email reports>)
+- [Weekly Reports](<#weekly reports>)
 - [API](#api)
-	- [Public dashboard](#public-dashboard)
+	- [Public dashboard](<#public dashboard>)
 ## Legacy Reports
 
 In the Legacy Reports section under the Reports tab is located the legacy reporting feature. Starting from version 5.0, the NetBeez dashboard is offering an improved and more efficient reporting experience. Until the Reports Beta is completed, the original reporting feature can be utilized under the Legacy Reports tab. Four types of reports can be generated under Legacy Reports:
 
 - **Network summary** - This report provides a high-level overview of agents and targets. For each agent, the user can review availability, download, and upload speed if that agent had a speed test configured, and the number of alerts. For each target, the user can review the average HTTP GET time and number of alerts.
-    
 - **Agents** - The user can select one or more agents to get a report on alerts occurrence per target monitored, test performance, and HTTP targets performance.
-    
 - **Targets** - The user can select one or more targets to get a report on alerts occurrence per agent included, test performance, and HTTP performance per agent.
-    
 - **Scheduled tests** - This report plots in a line graph format selected Iperf, speed test, and VoIP scheduled tests.
-    
 
 When generating a report on the dashboard, it’s possible to extract such a report in PDF format or save that report in a preset, which is the definition of the report type along with the input parameters selected (e.g. report time period, elements to be included in the report, etc.). As we’ll see in the next paragraph, presets must be created to schedule email reports.
 

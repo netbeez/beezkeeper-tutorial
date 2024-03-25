@@ -5,20 +5,17 @@ Anomaly detection is one of the primary functionalities of NetBeez. Fast and pro
 There are three main components of the NetBeez anomaly detection system:
 
 - **Alerts** - Alerts are triggered by real-time tests based on certain conditions, as defined in alert detectors; alert detectors are assigned to targets.
-    
 - **Incidents** - Incidents are triggered by an agent, target, or WiFi network when a certain percentage of tests trigger alerts (incident threshold); incidents are a good way to reduce the noise from multiple alerts related to the same resource.
-    
 - **Notifications** - Notifications are delivered via email, Slack, SNMP traps, and other methods when an alert is triggered and/or an incident is raised.
-    
 
 ![](assets/anomaly-detection-high-level.png)
 
 If the above chart is not clear, keep reading. In the next paragraphs, we’ll review in detail each one of these components.
 
-- [Alert profiles](#alert-profiles)
-	- [Types of alert profiles](#types-of-alert-profiles)
-	- [Percentile-based mean](#percentile-based-mean)
-- [Device alerts](#device-alerts)
+- [Alert profiles](<#alert profiles>)
+	- [Types of alert profiles](<#types of alert profiles>)
+	- [Percentile-based mean](<#percentile-based mean>)
+- [Device alerts](<#device alerts>)
 - [Incidents](#incidents)
 - [Notifications](#notifications)
 
@@ -51,9 +48,9 @@ There are five types of alert profiles:
 	![](assets/performance-watermark.png)
 
 4. **Performance Baseline AND Watermark** - This alert profile merges both performance baseline and watermark rules. If both detection methods are satisfied, then an alert will be triggered.
-    
+
 5. **Down-Up** - Down-up alerts are triggered when a test succeeds. The mechanism is the reciprocal of the up-down alert. Down-up alerts are used to enforce security policies, such as verifying content filtering (e.g. users can’t access certain websites) or firewall rules (e.g. an isolated network can’t access the Internet).
-    
+
 ### Percentile-based mean
 
 When calculating an average for a given time period, all test results are accounted for. However, especially in stable time series, one or a few outliers could dramatically skew the mathematical average, like in the below example. When this happens, performance alerts may be triggered, causing false positives.
@@ -73,7 +70,6 @@ Device alerts are triggered when an agent is either unreachable from the dashboa
 ![](assets/agent-device-alerts.png)
 
 One important thing to remember is that, when a device is not connected to the dashboard anymore, all tests are placed in unknown status (marked with “?”), incidents are cleared and so are alerts.
-
 ## Incidents
 
 Incidents are periods of degraded or otherwise abnormal performance of an agent, target, or WiFi network. This functionality is designed to help users identify problems and performance variations with a network location (agent), service or application (target), and WiFi network. Another benefit of incidents is that they reduce the number of notifications that a user has to receive.

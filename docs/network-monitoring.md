@@ -1,30 +1,30 @@
 # Network monitoring
 In this section, we’ll set up NetBeez to monitor in real-time some applications and run periodic network performance tests.
 
-- [ISP Tagging](#isp-tagging)
-- [Endpoint Performance Metrics](#endpoint-performance-metrics)
-- [Targets and real-time testing](#targets-and-real-time-testing)
-	- [Creating a target](#creating-a-target)
-	- [Path Analysis](#path-analysis)
-	- [Monitoring a web application](#monitoring-a-web-application)
-	- [Monitoring a DNS service](#monitoring-a-dns-service)
-	- [Monitoring a TCP-based application](#monitoring-a-tcp-based-application)
-	- [WAN performance monitoring](#wan-performance-monitoring)
-	- [Gateway Testing](#gateway-testing)
-	- [Tests Over VPN](#tests-over-vpn)
-- [Monitoring network performance with scheduled tests](#monitoring-network-performance-with-scheduled-tests)
+- [ISP Tagging](<#isp tagging>)
+- [Endpoint Performance Metrics](<#endpoint performance metrics>)
+- [Targets and real-time testing](<#targets and real-time testing>)
+	- [Creating a target](<#creating a target>)
+	- [Path Analysis](<#path analysis>)
+	- [Monitoring a web application](<#monitoring a web application>)
+	- [Monitoring a DNS service](<#monitoring a dns service>)
+	- [Monitoring a TCP-based application](<#monitoring a tcp-based application>)
+	- [WAN performance monitoring](<#wan performance monitoring>)
+	- [Gateway Testing](<#gateway testing>)
+	- [Tests Over VPN](<#tests over vpn>)
+- [Monitoring network performance with scheduled tests](<#monitoring network performance with scheduled tests>)
 	- [Iperf](#iperf)
-	- [Network speed](#network-speed)
+	- [Network speed](<#network speed>)
 	- [VoIP](#voip)
+- [Monitoring Conditions](<#monitoring conditions>)
 - [QoS](#qos)
 
 ## ISP Tagging
 When an agent connects to the NetBeez dashboard it reports its external IP address. With that information, the NetBeez dashboard then applies the following two tags to an agent:
 
 - ISP name, which is the name of the internet service provider that the remote user connects to.
-    
 - Autonomous System Number (ASN), which is a specific network number that belongs to that specific ISP.
-    
+
 With ISP tagging NetBeez users can filter agents based on these two tags, and reduce troubleshooting time to identify ISP issues affecting a set of remote users.
 
 ![Agent List](assets/14.agent-list.png)
@@ -74,21 +74,16 @@ In the following sections, we’ll report some strategies that can be used to mo
 Targets can be created from predefined SaaS targets, target templates, and fully customizable targets.
 
 - **SaaS Targets**: Predefined targets like Google, Zoom, Slack, and many more targets.
-    
 - **Target Templates**: Website, DNS, VPN, and Gateway.
-    
 - **Custom Targets**: Ping, DNS, HTTP, Traceroute, and Path Analysis.
-    
+
 ![Choosing a New Target class](assets/17.new-target-class-selection.png)
 
 Before creating a target, it’s a good practice to verify on the ad-hoc tab that the tests are correctly configured. Common configuration mistakes include:
 
 - The monitored service doesn’t allow ping tests; if that’s the case, verify if it’s reachable via a TCP-based ping.
-    
 - The web URL specified in an HTTP test has a redirection or doesn’t allow access to authenticated users (consider configuring HTTP basic or NTLM authentication).
-    
 - The FQDN or DNS name is incorrect.
-    
 ### Path Analysis
 The Path Analysis feature augments the existing traceroute capability for more accurate, real-time visibility on equal-cost multi-path network topologies, such as the Internet.
 
@@ -97,15 +92,11 @@ The Path Analysis feature augments the existing traceroute capability for more a
 For each hop, path analysis provides extensive information that is valuable for network analysis and troubleshooting, such as:
 
 - IP address and reverse DNS (if available)
-    
 - Round-trip time (RTT) real-time and historical
-    
 - Color coding of the RTT value (orange if above 100 ms. and red if above 150 ms.)
-    
 - Autonomous System Number (ASN), and AS Name
-    
 - Geo-IP location with coordinates
-    
+
 The path analysis plot also enables the user to highlight hops based on RTT, IP, DNS, and ASN, making it easier to troubleshoot performance issues with specific nodes, as well as aggregating nodes based on ASN and DNS domains to better understand the high-level topology your users traverse to reach their destination.
 
 Visit our [documentation](https://netbeez.zendesk.com/hc/en-us/articles/4403099027853-Path-Analysis) for more information on how to set up Path Analysis.
@@ -113,11 +104,9 @@ Visit our [documentation](https://netbeez.zendesk.com/hc/en-us/articles/44030990
 To monitor a web service include the following tests:
 
 - **Ping** - Reports the round-trip time and packet loss to the server where the application is hosted; if ICMP is not allowed, the user can configure a TCP-based ping test to the remote host’s TCP port 80 or 443.
-    
 - **DNS** - Verifies that the web service’s FQDN is working and the end-user clients can resolve the FQDN associated with the application. 
-    
 - **HTTP** - Performs an HTTP(S) GET to the URL provided in the address, verifying that the service is available to the users.
-    
+
 By comparing the status and performance of these three tests from multiple agents, NetBeez can determine whether a problem is related to the network, the webserver, or the DNS. In the [anomaly detection](anomaly-detection.md) section of this manual, we’ll cover in detail alerts, incidents, and notifications.
 
 ![Test template details](assets/19.target-template-details.png)
@@ -181,22 +170,17 @@ Network speed tests are useful to measure and build a baseline of download and u
 
 ![Network speed test results](assets/27.network-speed-results.png)
 
-NetBeez agents can run three different implementations of network speed tests:
+NetBeez agents can run two different implementations of network speed tests:
 
-- Speedtest - NetBeez is using speedtest-cli, the open-source implementation of the Ookla speed test service. The GitHub page of the speedtest-cli project is available at [https://github.com/sivel/speedtest-cli](https://github.com/sivel/speedtest-cli). This test measures the download, upload speed, and latency to an Internet Ookla speed test server. The user can select one specific speed test server from a public list or to let the algorithm pick the server with the lowest latency.
-    
 - NDT - NDT is an open-source speed test service promoted by the [M-Lab consortium](https://www.measurementlab.net/about/). Like the Ookla speed test service, NDT reports download, upload speed, and latency. NDT is also available via the command-line interface and reports additional information on the link between the NDT client, the NetBeez agent, and the NDT server, such as:
-    
 - slowest link speed traversed by the packets,
-    
 - whether there are network firewalls,
-    
 - whether the client or the server is behind NAT.
-    
+
 If you want to learn more about this command, read the [blog post on NDT](https://netbeez.net/blog/measuring-internet-speed-via-ndt/) that we wrote.
 
 - Fast.com - This is a download speed only test to the NetFlix CDN network to verify the performance of NetFlix streaming. This feature is particularly useful to Internet Service Providers interested in measuring the home subscriber end-user experience.
-    
+
 #### Enhanced Scheduled Test Result Visualization For Network Speed Tests
 Network Speed test results optimizes the user interface when viewing scheduled test results for hundreds or thousands of agents making it easy to filter and search for specific agent results. All network speed test results utilize this enhanced feature.
 
@@ -210,16 +194,29 @@ The test simulates a VoIP call between two agents and returns the Mean Opinion S
 
 When creating a new VoIP test, the user can pick the codec that is used to run the test. Please refer to the table below for a list of codecs and their characteristics. All the VoIP tests generate a UDP stream between the two agents selected that conform to the codec’s specifications. A common characteristic of these different codecs is that they’re delivered as UDP packets marked with the EF (DSCP 46) IP Type of Service.
 
-|Codec Name|Payload Size|Voice Speech|Pkts per Sec.|Bit Rate|
-|---|---|---|---|---|
-|G.711|160 Bytes|20 ms|50|64 Kbps|
-|G.729|20 Bytes|20 ms|50|8 Kbps|
-|G.723.1-63|24 Bytes|30 ms|33.3|21.9 Kbps|
-|G.723.1-53|20 Bytes|30 ms|33.3|20.8 Kbps|
-|G.726|80 Bytes|20 ms|50|55.2 Kbps|
-|G.728|60 Bytes|30 ms|33.3|31.5 Kbps|
-|G.722|160 Bytes|20 ms|50|38.4 Kbps|
+| Codec Name | Payload Size | Voice Speech | Pkts per Sec. | Bit Rate  |
+| ---------- | ------------ | ------------ | ------------- | --------- |
+| G.711      | 160 Bytes    | 20 ms        | 50            | 64 Kbps   |
+| G.729      | 20 Bytes     | 20 ms        | 50            | 8 Kbps    |
+| G.723.1-63 | 24 Bytes     | 30 ms        | 33.3          | 21.9 Kbps |
+| G.723.1-53 | 20 Bytes     | 30 ms        | 33.3          | 20.8 Kbps |
+| G.726      | 80 Bytes     | 20 ms        | 50            | 55.2 Kbps |
+| G.728      | 60 Bytes     | 30 ms        | 33.3          | 31.5 Kbps |
+| G.722      | 160 Bytes    | 20 ms        | 50            | 38.4 Kbps |
 
+## Monitoring Conditions
+
+Monitoring Conditions allow Remote Worker Agents to run tests only when specific conditions are met. NetBeez provides a simple user interface to create conditions sets which are can be applied to targets.
+
+Monitoring Conditions can be added to targets on the target creation wizard or while editing a target.
+
+![Monitoring conditions target setup wizard](assets/monitoring_conditions_target.png)
+
+Monitoring Conditions can be added to scheduled tests on the scheduled test creation wizard or while editing a scheduled test.
+
+![Monitoring conditions scheduled test](monitoring_conditions_scheduled_test.png)
+
+For more information on monitoring conditions, read the documentation [here](https://netbeez.zendesk.com/hc/en-us/articles/24614422699789-Monitoring-Conditions).
 ## QoS
 
 NetBeez has included DSCP marking of IP packets in the following tests: ping, traceroute, Iperf, and VoIP (pre-set). DSCP marking can be used to test differences in test performance based on the QoS policy applied to network devices.

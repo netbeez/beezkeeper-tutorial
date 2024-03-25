@@ -2,22 +2,22 @@
 **NetBeez** is a distributed network monitoring platform. The monitoring is performed from multiple points via hardware, software, and cloud agents, called *Beez*.  The agents are managed by a server, called the *Beezkeeper*, which is also located on-premise or in the cloud. 
 
 - [Dashboard](#dashboard)
-- [Server (BeezKeeper)](#server-beezkeeper)
+- [Server (BeezKeeper)](<#server beezkeeper>)
 - [Agents](#agents)
-	- [Control channel](#control-channel)
-	- [Agent Categories](#agent-categories)
-		- [Network Agents - Physical appliances](#network-agents---physical-appliances)
-			- [Wired (GigE) - 10/100/1000Mbps](#wired-gige---101001000mbps)
-			- [Wireless (WiFi) - 802.11ac](#wireless-wifi---80211ac)
-		- [Network Agents - Software-based](#network-agents---software-based)
-			- [Virtual agent](#virtual-agent)
-			- [Linux agent](#linux-agent)
-			- [Docker Agent](#docker-agent)
-		- [Remote Worker Agents](#remote-worker-agents)
-			- [Windows Agent](#windows-agent)
-			- [Mac OS Agent](#mac-os-agent)
+	- [Control channel](<#control channel>)
+	- [Agent Categories](<#agent categories>)
+		- [Network Agents - Physical appliances](<#network-agents - physical-appliances>)
+			- [Wired (GigE) - 10/100/1000Mbps](<#wired-gige - 101001000mbps>)
+			- [Wireless (WiFi) - 802.11ac](<#wireless-wifi - 80211ac>)
+		- [Network Agents - Software-based](<#network-agents - software-based>)
+			- [Virtual agent](<#virtual agent>)
+			- [Linux agent](<#linux agent>)
+			- [Docker Agent](<#docker agent>)
+		- [Remote Worker Agents](<#remote worker agents>)
+			- [Windows Agent](<#windows agent>)
+			- [Mac OS Agent](<#mac os agent>)
 - [Targets](#targets)
-- [Scheduled tests](#scheduled-tests)
+- [Scheduled tests](<#scheduled tests>)
 
 ## Dashboard
 The dashboard is the graphical user interface that is necessary to manage the agents, create monitoring tests, troubleshoot network or application problems, and receive alerts and reports.  The Dashboard runs on a dedicated server, called BeezKeeper. 
@@ -82,13 +82,9 @@ The Docker agent is available via the [NetBeez Docker hub page](https://hub.dock
 Remote Worker Agents are designed to support employees who are working from home. These agents support:
 
 - Real-time tests: ping, TCP ping, DNS, HTTP/S, Traceroute, Path Analysis.
-    
 - Scheduled tests: VoIP, Iperf, and Internet speed.
-    
 - Up to 20 real-time tests and 3 scheduled tests.
-    
 - Wi-Fi metrics for WLAN monitoring.
-    
 
 The remote worker agents can be installed on Windows and Mac.
 
@@ -102,11 +98,13 @@ The Windows Remote Worker agent is an executable program that runs on Windows De
 
 ![Mac Agent Icon](assets/9.mac-agent-icon.png)
 
+For macOS users, we have the macOS Remote Worker agent, an executable program designed to run on macOS desktops and laptops. You can download the latest version of the executable in DMG (Disk Image) format [here](https://github.com/netbeez/mac_installer/releases/tag/14.0.5).
+
 ## Targets
 A target is a web application or TCP-based service that is monitored by one or more agents running real-time tests such as ping, DNS, HTTP, traceroute and path analysis. A target is defined by one or more resources, which are defined by IP address, Fully Qualified Domain Name (FQDN), or URL. Each resource has its own assigned tests and alert profiles. We’ll talk more about targets in the [Monitoring](network-monitoring.md) section of this tutorial.
 
 ![Target Details](assets/10.target-details.png)
-## Scheduled tests
+## Scheduled Tests
 
 NetBeez supports three categories of scheduled tests: Iperf, speed test, and VoIP. Different from a real-time test, which is defined by a testing interval, a scheduled test runs less frequently according to a schedule defined by the user.
 
